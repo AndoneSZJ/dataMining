@@ -69,12 +69,13 @@
         </dependency>
 
 
+        <!--mllib中引入了Spark依赖-->
         <!--spark-->
         <!--<dependency>-->
         <!--<groupId>org.apache.spark</groupId>-->
         <!--<artifactId>spark-streaming_2.11</artifactId>-->
         <!--<version>${spark.version}</version>-->
-        <!--&lt;!&ndash;<scope>provided</scope>&ndash;&gt;-->
+        <!--<scope>provided</scope>-->
         <!--</dependency>-->
         <!--<dependency>-->
         <!--<groupId>org.apache.spark</groupId>-->
@@ -82,6 +83,7 @@
         <!--<version>${spark.version}</version>-->
         <!--<scope>provided</scope>-->
         <!--</dependency>-->
+
         <!--mllib-->
         <dependency>
             <groupId>org.apache.spark</groupId>
@@ -153,7 +155,7 @@
                 </executions>
             </plugin>
             <!--start-->
-            <!--所有依赖全部打包,更具需要选择-->
+            <!--所有依赖全部打包,根据需要选择-->
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
