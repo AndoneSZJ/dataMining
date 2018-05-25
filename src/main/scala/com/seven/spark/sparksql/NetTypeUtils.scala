@@ -19,48 +19,50 @@ object NetTypeUtils {
 
   /**
     * 计算点位信息，返回点位map，key为点位id
+    *
     * @param sc
     * @return
     */
-  def salesPointData(sc:SparkContext): util.HashMap[String,String] ={
+  def salesPointData(sc: SparkContext): util.HashMap[String, String] = {
     val point = sc.textFile("/Users/seven/data/pointData/*")
-        .filter(x => !"id".equals(x.toString.split(",")(0)))//去列头
-        .mapPartitions(x =>{
-          var list = List[(String,String)]()
-          x.foreach(row =>{
-            val line = row.toString.split(",")
-            list .::= (line(0),row+",seven")
-          })
-          list.iterator
-        }).collect()
+      .filter(x => !"id".equals(x.toString.split(",")(0))) //去列头
+      .mapPartitions(x => {
+      var list = List[(String, String)]()
+      x.foreach(row => {
+        val line = row.toString.split(",")
+        list.::=(line(0), row + ",seven")
+      })
+      list.iterator
+    }).collect()
 
-    val pointMap = new util.HashMap[String,String]()
+    val pointMap = new util.HashMap[String, String]()
 
-    for(p <- point){
-      pointMap.put(p._1,p._2)
+    for (p <- point) {
+      pointMap.put(p._1, p._2)
     }
     pointMap
   }
 
   /**
     * 计算网点信息，返回网点map，key为网点id
+    *
     * @param sc
     * @return
     */
-  def salesNetData(sc:SparkContext): util.HashMap[String,String] ={
+  def salesNetData(sc: SparkContext): util.HashMap[String, String] = {
     val net = sc.textFile("/Users/seven/data/netData/*")
-      .filter(x => !"id".equals(x.toString.split(",")(0)))//去除列头
-      .mapPartitions(x =>{
-        var list = List[(String,String)]()
-        x.foreach(row =>{
-          val line = row.toString.split(",")
-          list .::= (line(0),row+",seven")
-        })
-        list.iterator
-      }).collect()
-    val netMap = new util.HashMap[String,String]()
-    for(n <- net){
-      netMap.put(n._1,n._2)
+      .filter(x => !"id".equals(x.toString.split(",")(0))) //去除列头
+      .mapPartitions(x => {
+      var list = List[(String, String)]()
+      x.foreach(row => {
+        val line = row.toString.split(",")
+        list.::=(line(0), row + ",seven")
+      })
+      list.iterator
+    }).collect()
+    val netMap = new util.HashMap[String, String]()
+    for (n <- net) {
+      netMap.put(n._1, n._2)
     }
     netMap
   }

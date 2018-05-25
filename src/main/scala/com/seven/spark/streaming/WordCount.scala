@@ -20,18 +20,18 @@ object WordCount {
 
     val sparkConf = new SparkConf().setMaster("local[2]").setAppName(this.getClass.getSimpleName)
     //创建streaming对象，5秒计算一次
-    val ssc = new StreamingContext(sparkConf,Seconds(5))
+    val ssc = new StreamingContext(sparkConf, Seconds(5))
     //拆分topic
     val topicsSet = topics.split(",").toSet
 
-    val kafkaParams = Map[String,String](
-      "metadata.broker.list"-> brokers)
+    val kafkaParams = Map[String, String](
+      "metadata.broker.list" -> brokers)
 
-//    val kafkaStream = KafkaUtils.createDirectStream[String,String,StringDecoder,StringDecoder](ssc,kafkaParams,topicsSet)
-//
-//    kafkaStream.map(_._2).flatMap(_.split(" ")).map((_,1)).reduceByKey(_+_).print()
+    //    val kafkaStream = KafkaUtils.createDirectStream[String,String,StringDecoder,StringDecoder](ssc,kafkaParams,topicsSet)
+    //
+    //    kafkaStream.map(_._2).flatMap(_.split(" ")).map((_,1)).reduceByKey(_+_).print()
 
-    ssc.start()//启动计算
+    ssc.start() //启动计算
     ssc.awaitTermination()
   }
 }

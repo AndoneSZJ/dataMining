@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory
 object StreamingKafka {
   private final val log = LoggerFactory.getLogger(this.getClass)
   val conf = new SparkConf().setMaster("local[2]").setAppName(this.getClass.getSimpleName)
-  val ssc = new StreamingContext(conf,Seconds(5))
+  val ssc = new StreamingContext(conf, Seconds(5))
 
   // 广播KafkaSink
   val kafkaProducer: Broadcast[KafkaSink[String, String]] = {
@@ -40,19 +40,19 @@ object StreamingKafka {
   }
 
   def main(args: Array[String]): Unit = {
-    val socketData = ssc.socketTextStream("localhost",7777)
+    val socketData = ssc.socketTextStream("localhost", 7777)
     val topic = "seven"
-    socketData.mapPartitions(x =>{
-      var list = List[(String,String)]()
-      x.foreach(row =>{
-        val line =  row.split(" ")
-        list .::= (line(0),line(1)+","+line(2))
+    socketData.mapPartitions(x => {
+      var list = List[(String, String)]()
+      x.foreach(row => {
+        val line = row.split(" ")
+        list.::=(line(0), line(1) + "," + line(2))
       })
       list.iterator
-    }).foreachRDD(x =>{
-      x.foreachPartition(row =>{
-        row.foreach(line =>{
-          kafkaProducer.value.send(topic,line._1,line._2)
+    }).foreachRDD(x => {
+      x.foreachPartition(row => {
+        row.foreach(line => {
+          kafkaProducer.value.send(topic, line._1, line._2)
         })
       })
     })

@@ -12,12 +12,12 @@ import java.util
   */
 object ConnectionPool {
   private var current_num = 0 //当前连接池已产生的连接数
-  private val connections = new util.LinkedList[Connection]()//连接池
+  private val connections = new util.LinkedList[Connection]() //连接池
 
   try {
     Class.forName("com.mysql.jdbc.Driver")
-  }catch {
-    case e: ClassCastException  => println(e.toString)
+  } catch {
+    case e: ClassCastException => println(e.toString)
   }
 
   /**
@@ -27,6 +27,7 @@ object ConnectionPool {
     val conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb", "root", "123456")
     conn
   }
+
   /**
     * 初始化连接池
     */
@@ -42,17 +43,19 @@ object ConnectionPool {
       connections
     })
   }
+
   /**
     * 获得连接
     */
-  def getConn():Connection={
+  def getConn(): Connection = {
     initConnectionPool()
     connections.poll()
   }
+
   /**
     * 释放连接
     */
-  def releaseCon(con:Connection){
+  def releaseCon(con: Connection) {
     connections.push(con)
   }
 

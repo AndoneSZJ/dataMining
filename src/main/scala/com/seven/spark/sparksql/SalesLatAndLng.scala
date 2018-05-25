@@ -20,12 +20,12 @@ object SalesLatAndLng {
     .getOrCreate()
 
   def main(args: Array[String]): Unit = {
-    val netData = spark.read.option("delimiter",",").csv("/Users/seven/data/aaaaa/*")
+    val netData = spark.read.option("delimiter", ",").csv("/Users/seven/data/aaaaa/*")
     val fieldSchema = StructType(Array(StructField("id", StringType, true)))
 
-    spark.createDataFrame(netData.rdd,fieldSchema).createOrReplaceTempView("data")
+    spark.createDataFrame(netData.rdd, fieldSchema).createOrReplaceTempView("data")
 
-    spark.read.option("delimiter",",").option("header","true").csv("/Users/seven/data/netData/*").createOrReplaceTempView("net")
+    spark.read.option("delimiter", ",").option("header", "true").csv("/Users/seven/data/netData/*").createOrReplaceTempView("net")
 
     val sql =
       """
@@ -36,6 +36,6 @@ object SalesLatAndLng {
 
     val data = spark.sql(sql)
 
-    data.repartition(1).write.mode(SaveMode.Overwrite).option("header","true").csv("/Users/seven/data/bbbb/cccc/")
+    data.repartition(1).write.mode(SaveMode.Overwrite).option("header", "true").csv("/Users/seven/data/bbbb/cccc/")
   }
 }

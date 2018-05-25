@@ -16,26 +16,26 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 object TopThreeHotProduct {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName(this.getClass.getSimpleName).setMaster("local[2]")
-    val ssc = new StreamingContext(conf,Seconds(5))
+    val ssc = new StreamingContext(conf, Seconds(5))
     val sqlContext = new SQLContext(ssc.sparkContext)
-//    val hiveContext = new HiveContext(ssc.sparkContext)
+    //    val hiveContext = new HiveContext(ssc.sparkContext)
 
-    val dstream = ssc.socketTextStream("localhost",7777)
+    val dstream = ssc.socketTextStream("localhost", 7777)
 
-    val data = dstream.mapPartitions(x =>{
-      var list = List[(String,Int)]()
-      x.foreach(row =>{
+    val data = dstream.mapPartitions(x => {
+      var list = List[(String, Int)]()
+      x.foreach(row => {
         val line = row.split(" ")
-        list .::= (line(2)+"#"+line(1),1)//商品分类，商品名，次数
+        list.::=(line(2) + "#" + line(1), 1) //商品分类，商品名，次数
       })
       list.iterator
-    }).reduceByKeyAndWindow((v1:Int,v2:Int) => v1+v2,Seconds(60),Seconds(10))
-      .foreachRDD(x =>{
-       val rowData =  x.mapPartitions(x =>{
+    }).reduceByKeyAndWindow((v1: Int, v2: Int) => v1 + v2, Seconds(60), Seconds(10))
+      .foreachRDD(x => {
+        val rowData = x.mapPartitions(x => {
           var list = List[Row]()
-          x.foreach(row =>{
+          x.foreach(row => {
             val line = row._1.split("#")
-            list .::= (Row(line(0),line(1),row._2))//商品分类，商品名，次数
+            list.::=(Row(line(0), line(1), row._2)) //商品分类，商品名，次数
           })
           list.iterator
         })
@@ -46,7 +46,7 @@ object TopThreeHotProduct {
           StructField("click_count", IntegerType, true)
         ))
 
-        val rowDframe = sqlContext.createDataFrame(rowData,structType)
+        val rowDframe = sqlContext.createDataFrame(rowData, structType)
 
         rowDframe.createOrReplaceTempView("product_click_log")
 

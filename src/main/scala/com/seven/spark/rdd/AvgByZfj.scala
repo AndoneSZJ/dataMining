@@ -16,7 +16,7 @@ object AvgByZfj {
   val conf = new SparkConf()
     .setAppName(this.getClass.getSimpleName)
     .setMaster("local[2]")
-    .set("spark.serializer","org.apache.spark.serializer.KryoSerializer")
+    .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
 
   val sc = new SparkContext(conf)
 
@@ -34,28 +34,36 @@ object AvgByZfj {
 
   /**
     * 计算自贩机渠道销售12月平均值
+    *
     * @param path
     */
-  def salesAvgByZfj(path:String): Unit ={
-    val data = sc.textFile(path).mapPartitions(x =>{
-      var list = List[(String,String)]()
-      x.foreach(row =>{
-        val line = row.replaceAll("[()]","").split(",")
-        val channelName = line(0)//去渠道名称
-        val month = line(1)//月份
+  def salesAvgByZfj(path: String): Unit = {
+    val data = sc.textFile(path).mapPartitions(x => {
+      var list = List[(String, String)]()
+      x.foreach(row => {
+        val line = row.replaceAll("[()]", "").split(",")
+        val channelName = line(0)
+        //去渠道名称
+        val month = line(1)
+        //月份
         //upper+","+q3+","+midder+","+q1+","+lower
-        val upper = line(2)//最优
-        val q3 = line(3)//靠前
-        val middle = line(4)//中间
-        val q1 = line(5)//靠后
-        val lower = line(6)//最差
-        val result = month+","+upper+","+q3+","+middle+","+q1+","+lower
-        list .::= (channelName,result)
+        val upper = line(2)
+        //最优
+        val q3 = line(3)
+        //靠前
+        val middle = line(4)
+        //中间
+        val q1 = line(5)
+        //靠后
+        val lower = line(6)
+        //最差
+        val result = month + "," + upper + "," + q3 + "," + middle + "," + q1 + "," + lower
+        list.::=(channelName, result)
       })
       list.iterator
-    }).reduceByKey(_+"@"+_).mapPartitions(x =>{
+    }).reduceByKey(_ + "@" + _).mapPartitions(x => {
       var list = List[(String)]()
-      x.foreach(row =>{
+      x.foreach(row => {
         val lines = row._2.split("@")
         //获取当前渠道下12月平均值
         var avgUpper = 0.0
@@ -63,7 +71,7 @@ object AvgByZfj {
         var avgMiddle = 0.0
         var avgQ1 = 0.0
         var avgLower = 0.0
-        for(l <- lines){
+        for (l <- lines) {
           val line = l.split(",")
           avgUpper += line(1).toDouble
           avgQ3 += line(2).toDouble
@@ -78,7 +86,7 @@ object AvgByZfj {
         avgQ1 = avgQ1 / 12
         avgLower = avgLower / 12
 
-        list .::= (row._1+","+avgUpper+","+avgQ3+","+avgMiddle+","+avgQ1+","+avgLower)
+        list.::=(row._1 + "," + avgUpper + "," + avgQ3 + "," + avgMiddle + "," + avgQ1 + "," + avgLower)
 
       })
       list.iterator

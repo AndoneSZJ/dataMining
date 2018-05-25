@@ -23,38 +23,41 @@ object SalesNumInChannelByZfj {
 
   /**
     * 计算
+    *
     * @param path
     */
-  def salesNumInChannelByZfj(path:String): Unit ={
-    val data = sc.textFile(path).filter(x =>{
-      val line = x.split(",")//4->售货机状态代码
-      line.length > 62 && "1".equals(line(4))//过滤数据
-    }).mapPartitions(x =>{
-      var list =List[(String,String)]()
-      x.foreach(row =>{
+  def salesNumInChannelByZfj(path: String): Unit = {
+    val data = sc.textFile(path).filter(x => {
+      val line = x.split(",") //4->售货机状态代码
+      line.length > 62 && "1".equals(line(4)) //过滤数据
+    }).mapPartitions(x => {
+      var list = List[(String, String)]()
+      x.foreach(row => {
         val line = row.split(",")
-        val channelId = line(28)//渠道id
-        val channelName = line(30).replace("@","")//渠道名称
-        val vmId = line(1)//自贩机id
-        if("".equals(channelId)){
+        val channelId = line(28)
+        //渠道id
+        val channelName = line(30).replace("@", "")
+        //渠道名称
+        val vmId = line(1) //自贩机id
+        if ("".equals(channelId)) {
           println(vmId)
         }
-        list .::= (channelId,vmId+","+channelName+",seven")
+        list.::=(channelId, vmId + "," + channelName + ",seven")
       })
       list.iterator
-    }).reduceByKey(_+"@"+_).mapPartitions(x =>{
-      var list =List[(String)]()
-      x.foreach(row =>{
+    }).reduceByKey(_ + "@" + _).mapPartitions(x => {
+      var list = List[(String)]()
+      x.foreach(row => {
         val lines = row._2.split("@")
         val channelName = lines(0).split(",")(1)
-        var map:Map[String,Boolean] = Map()
-        for(l <- lines){
+        var map: Map[String, Boolean] = Map()
+        for (l <- lines) {
           val line = l.split(",")
-          if(!map.contains(line(0))){
+          if (!map.contains(line(0))) {
             map += (line(0) -> true)
           }
         }
-        list .::= (row._1+","+channelName+","+map.size)
+        list.::=(row._1 + "," + channelName + "," + map.size)
       })
       list.iterator
     }).cache()

@@ -19,36 +19,36 @@ object SimulationKafkaSendOutData {
     simulationSendOutData(map)
   }
 
-  def getDataByOrder(path: String): util.HashMap[Int,String] ={
+  def getDataByOrder(path: String): util.HashMap[Int, String] = {
     val sc = new SparkContext(new SparkConf().setMaster("local[2]").setAppName(this.getClass.getSimpleName))
     val data = sc.textFile(path).collect()
-    val map = new util.HashMap[Int,String]()
+    val map = new util.HashMap[Int, String]()
     var num = 1
-    for(d <- data){
-      map.put(num,num+","+d)
+    for (d <- data) {
+      map.put(num, num + "," + d)
       num += 1
     }
     sc.stop()
     map
   }
 
-  def simulationSendOutData(map: util.HashMap[Int,String]): Unit ={
+  def simulationSendOutData(map: util.HashMap[Int, String]): Unit = {
     val props = new Properties()
-    props.put("bootstrap.servers","vm-xaj-bigdata-da-d01:9092,vm-xaj-bigdata-da-d02:9092,vm-xaj-bigdata-da-d03:9092,vm-xaj-bigdata-da-d04:9092,vm-xaj-bigdata-da-d05:9092,vm-xaj-bigdata-da-d06:9092,vm-xaj-bigdata-da-d07:9092")
-    props.put("acks","all")
-    props.put("retries","0")
-    props.put("batch.size","16384")
-    props.put("linger.ms","1")
-    props.put("buffer.memory","33554432")
-    props.put("key.serializer","org.apache.kafka.common.serialization.StringSerializer")
-    props.put("value.serializer","org.apache.kafka.common.serialization.StringSerializer")
+    props.put("bootstrap.servers", "vm-xaj-bigdata-da-d01:9092,vm-xaj-bigdata-da-d02:9092,vm-xaj-bigdata-da-d03:9092,vm-xaj-bigdata-da-d04:9092,vm-xaj-bigdata-da-d05:9092,vm-xaj-bigdata-da-d06:9092,vm-xaj-bigdata-da-d07:9092")
+    props.put("acks", "all")
+    props.put("retries", "0")
+    props.put("batch.size", "16384")
+    props.put("linger.ms", "1")
+    props.put("buffer.memory", "33554432")
+    props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")
+    props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
     val producer = new KafkaProducer[String, String](props)
     println(map.size())
-    for(m <- 1 to map.size()){
+    for (m <- 1 to map.size()) {
       val message = map.get(m)
-      producer.send(new ProducerRecord[String, String]("seven", m.toString,message))
+      producer.send(new ProducerRecord[String, String]("seven", m.toString, message))
       println(message)
-//      Thread.sleep(100)
+      //      Thread.sleep(100)
     }
     producer.close()
   }
