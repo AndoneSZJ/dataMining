@@ -1,7 +1,7 @@
 package com.seven.spark.project
 
 import org.apache.spark.SparkConf
-import org.apache.spark.streaming.kafka.KafkaUtils
+//import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 /**
@@ -23,9 +23,9 @@ object KafkaReceiverWordCount {
 
     val topicMap = topics.split(",").map((_,numThreads.toInt)).toMap
 
-    val kafkaStream = KafkaUtils.createStream(ssc, zkQuorum, group, topicMap)
-    kafkaStream.print()
-    kafkaStream.map(_._1).flatMap(_.split(" ")).map((_,1)).reduceByKey(_+_).print()
+//    val kafkaStream = KafkaUtils.createStream(ssc, zkQuorum, group, topicMap)
+//    kafkaStream.print()
+//    kafkaStream.map(_._1).flatMap(_.split(" ")).map((_,1)).reduceByKey(_+_).print()
 
     ssc.start()
     ssc.awaitTermination()

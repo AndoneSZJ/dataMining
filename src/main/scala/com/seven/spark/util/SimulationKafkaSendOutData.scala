@@ -1,8 +1,7 @@
 package com.seven.spark.util
 
-import java.text.DecimalFormat
 import java.util
-import java.util.{Properties, Random}
+import java.util.{Properties}
 
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 import org.apache.spark.{SparkConf, SparkContext}
@@ -44,13 +43,11 @@ object SimulationKafkaSendOutData {
     props.put("key.serializer","org.apache.kafka.common.serialization.StringSerializer")
     props.put("value.serializer","org.apache.kafka.common.serialization.StringSerializer")
     val producer = new KafkaProducer[String, String](props)
-    for(m <- 1 to 100){
+    for(m <- 1 to 1000){
       val message = map.get(m)
       producer.send(new ProducerRecord[String, String]("seven", m.toString,message))
       println(message)
-//      if(m % 5 == 0){
-        Thread.sleep(500)
-//      }
+      Thread.sleep(100)
     }
     producer.close()
   }

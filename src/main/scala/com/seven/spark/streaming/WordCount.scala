@@ -3,7 +3,7 @@ package com.seven.spark.streaming
 import kafka.serializer.StringDecoder
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.{Seconds, StreamingContext}
-import org.apache.spark.streaming.kafka.KafkaUtils
+//import org.apache.spark.streaming.kafka.KafkaUtils
 
 /**
   * author seven
@@ -27,9 +27,9 @@ object WordCount {
     val kafkaParams = Map[String,String](
       "metadata.broker.list"-> brokers)
 
-    val kafkaStream = KafkaUtils.createDirectStream[String,String,StringDecoder,StringDecoder](ssc,kafkaParams,topicsSet)
-
-    kafkaStream.map(_._2).flatMap(_.split(" ")).map((_,1)).reduceByKey(_+_).print()
+//    val kafkaStream = KafkaUtils.createDirectStream[String,String,StringDecoder,StringDecoder](ssc,kafkaParams,topicsSet)
+//
+//    kafkaStream.map(_._2).flatMap(_.split(" ")).map((_,1)).reduceByKey(_+_).print()
 
     ssc.start()//启动计算
     ssc.awaitTermination()

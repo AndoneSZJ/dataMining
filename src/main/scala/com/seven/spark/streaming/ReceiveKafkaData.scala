@@ -1,16 +1,15 @@
 package com.seven.spark.streaming
 
-import java.util
-
-import com.seven.spark.common.Utils
-import com.seven.spark.hbase.{HBaseOps, HBaseUtils}
+import com.seven.spark.hbase.HBaseOps
 import com.seven.spark.hbase.rowkey.RowKeyGenerator
-import com.seven.spark.hbase.rowkey.generator.{FileRowKeyGenerator, HashRowKeyGenerator}
-import kafka.serializer.StringDecoder
+import com.seven.spark.hbase.rowkey.generator.HashRowKeyGenerator
 import org.apache.hadoop.hbase.client.Put
 import org.apache.hadoop.hbase.util.Bytes
+import org.apache.kafka.common.serialization.StringDeserializer
 import org.apache.spark.SparkConf
-import org.apache.spark.streaming.kafka.KafkaUtils
+import org.apache.spark.streaming.kafka010._
+import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
+import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 //import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.slf4j.LoggerFactory
@@ -27,7 +26,7 @@ object ReceiveKafkaData {
   private final val log = LoggerFactory.getLogger(this.getClass)
   def main(args: Array[String]): Unit = {
     //topic
-    val topics = "seven"
+    val topics = Array("seven")
     //kafka地址
     val brokers = "vm-xaj-bigdata-da-d01:9092,vm-xaj-bigdata-da-d02:9092,vm-xaj-bigdata-da-d03:9092," +
       "vm-xaj-bigdata-da-d04:9092,vm-xaj-bigdata-da-d05:9092,vm-xaj-bigdata-da-d06:9092,vm-xaj-bigdata-da-d07:9092"
@@ -41,51 +40,44 @@ object ReceiveKafkaData {
 
     //创建streaming对象，5秒计算一次
     val ssc = new StreamingContext(sparkConf,Seconds(5))
-    //拆分topic
-    val topicsSet = topics.split(",").toSet
+//    kafka  0-8
+//    拆分topic
+//    val topicsSet = topics.split(",").toSet
+//    val kafkaParams = Map[String,String](
+//      "metadata.broker.list"-> brokers)
+//    val kafkaStream = KafkaUtils.createDirectStream[String,String,StringDecoder,StringDecoder](ssc,kafkaParams,topicsSet)
 
-    val kafkaParams = Map[String,String](
-      "metadata.broker.list"-> brokers)
-    import org.apache.kafka.common.TopicPartition
+//    kafka  0-10
+    val kafkaParams = Map[String, Object](
+      "bootstrap.servers" -> brokers,
+      "key.deserializer" -> classOf[StringDeserializer],
+      "value.deserializer" -> classOf[StringDeserializer],
+      "group.id" -> "use_a_separate_group_id_for_each_stream",
+      "auto.offset.reset" -> "latest",
+      "enable.auto.commit" -> (false: java.lang.Boolean)
+    )
+    val kafkaStream = KafkaUtils.createDirectStream[String, String](
+      ssc,
+      PreferConsistent,
+      Subscribe[String, String](topics, kafkaParams))
 
-    val offsets = new util.HashMap[TopicPartition,Long]()
-//    offsets.put(new TopicPartition("seven", 0), 2L)
 
-    val kafkaStream = KafkaUtils.createDirectStream[String,String,StringDecoder,StringDecoder](ssc,kafkaParams,topicsSet)
-//    val kafkaStream = KafkaUtils.createDirectStream(ssc,
-//      LocationStrategies.PreferConsistent(),
-//      ConsumerStrategies.Subscribe(topicsSet, kafkaParams, offsets))
-
-//    val fileRowKeyGen:RowKeyGenerator[String] = new HashRowKeyGenerator()
     val rowKeyGen:RowKeyGenerator[String] = new HashRowKeyGenerator()
     val family = "family"
     val qualifier = "qualifier"
-//    var num = 1
-    kafkaStream.map(_._2).foreachRDD(rdd =>{
-//      if(rdd.isEmpty()) {
+    kafkaStream.map(_.value()).foreachRDD(rdd =>{
+      if(!rdd.isEmpty()) {
         rdd.foreachPartition(x =>{
           var puts = List[Put]()
           x.foreach(row =>{
-            println(row)
             val put = new Put(rowKeyGen.generate(""))//获取rowkey
             put.addColumn(Bytes.toBytes(family),Bytes.toBytes(qualifier),Bytes.toBytes(row))//插入一条数据
             puts .::= (put)
           })
-//          num += puts.size
-//          print(num)
           HBaseOps.put("seven",puts)//工具类，批量插入数据
           log.info("put hbase is success . . .")
         })
-//      rdd.foreachPartition(x =>{
-//        val hbase = HBaseUtils.getInstance()
-//        x.foreach(row => {
-//          hbase.put("seven",new String(fileRowKeyGen.generate("")),family,qualifier,row)
-//        })
-//      })
-//      rdd.foreach(x =>{
-//        HBaseOps.put("seven",new String(fileRowKeyGen.generate("")),family,qualifier,x)
-//      })
-//      }
+      }
     })
 
     ssc.start()//启动计算
