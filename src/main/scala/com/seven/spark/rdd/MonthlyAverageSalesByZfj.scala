@@ -13,7 +13,7 @@ import scala.collection.mutable
 /**
   * Created by IntelliJ IDEA.  
   * author   seven  
-  * email    zjshi01@mail.nfsq.com.cn 
+  * email    sevenstone@yeah.net
   * date     2018/5/17 下午3:36
   * 按照渠道维度计算过去一年，每月台销情况
   * 2017.05-2018.04

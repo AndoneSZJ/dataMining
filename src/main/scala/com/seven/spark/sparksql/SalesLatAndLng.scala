@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory
 /**
   * Created by IntelliJ IDEA.  
   * author   seven  
-  * email    zjshi01@mail.nfsq.com.cn 
+  * email    sevenstone@yeah.net
   * date     2018/5/17 下午4:36     
   */
 object SalesLatAndLng {

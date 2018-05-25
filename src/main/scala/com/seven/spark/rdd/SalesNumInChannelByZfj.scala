@@ -5,7 +5,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * Created by IntelliJ IDEA.  
   * author   seven  
-  * email    zjshi01@mail.nfsq.com.cn 
+  * email    sevenstone@yeah.net
   * date     2018/5/18 上午10:17     
   */
 object SalesNumInChannelByZfj {

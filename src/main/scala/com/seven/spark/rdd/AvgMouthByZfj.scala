@@ -14,7 +14,7 @@ import scala.collection.mutable
 /**
   * Created by IntelliJ IDEA.  
   * author   seven  
-  * email    zjshi01@mail.nfsq.com.cn 
+  * email    sevenstone@yeah.net
   * date     2018/5/22 上午10:09     
   */
 object AvgMouthByZfj {
