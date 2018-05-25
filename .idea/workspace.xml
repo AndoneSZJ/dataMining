@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="079fbdcf-e015-4338-8053-bfadf9b05f5a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/jdbc/ConnectionPool.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/jdbc/ConnectionPool.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/KafkaSink.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/KafkaSink.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,113 +30,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SimulationKafkaSendOutData.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-70">
-              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-              <folding>
-                <element signature="e#30#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-236">
-              <caret line="72" column="20" lean-forward="true" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseOrder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/BaseOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ReceiveKafkaData.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-552">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-              <folding>
-                <element signature="e#36#73#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="87">
+              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionPool.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/jdbc/ConnectionPool.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-380">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KafkaSink.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/KafkaSink.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Producer.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Process.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1293">
-              <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
-              <folding>
-                <element signature="e#1573#1597#0" expanded="true" />
-                <element signature="e#2702#2726#0" expanded="true" />
-                <element signature="e#3638#3662#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AvgProcess.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="81" column="100" selection-start-line="81" selection-start-column="100" selection-end-line="81" selection-end-column="100" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1936#1960#0" expanded="true" />
-                <element signature="e#3125#3149#0" expanded="true" />
-                <element signature="e#4205#4229#0" expanded="true" />
-                <element signature="e#5320#5344#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="15">
+                <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -174,57 +83,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/log4j2.properties" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelAndNetByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/MonthlyAverageSalesByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/GetAllRlbData2018.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/dw_zfj_rlb" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/dw_dim_zfj" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodNet.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodPoint.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateStat.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetTypeUtils.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgaMount.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/MD5RowKeyGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/hbase/HbaseUtil.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/hbase/HBaseUtil.scala" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/PooledHBaseFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/HBasePool.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/ReadHdfsFile.scala" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/RowKeyGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/common/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/common/CommonConst.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/HelloScala.scala" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/HelloJava.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaDirectWordCount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaReceiverWordCount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaStreamApp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/spark/LtStatStreamingApp.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/jdbc/ConnectionPool.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/KafkaSink.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/MonthlyAverageSalesByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PointNumberOfPeople.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodNet.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodPoint.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesTimeInterval.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesUserPurchaseOfGoods.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesVolume.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/TestMap.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetTypeUtils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/SalesLatAndLng.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/StreamingKafka.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/TopThreeHotProduct.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCountSocket.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/ReadHdfsFile.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/HelloScala.scala" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -711,7 +620,7 @@
       <workItem from="1526864458530" duration="62634000" />
       <workItem from="1527123263055" duration="37702000" />
       <workItem from="1527209180110" duration="1281000" />
-      <workItem from="1527214224686" duration="16887000" />
+      <workItem from="1527214224686" duration="17757000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1527214314628</created>
@@ -755,11 +664,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527234897598</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="更新pom">
+      <created>1527237393156</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527237393156</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="340294000" />
+    <option name="totallyTimeSpent" value="341164000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -850,13 +766,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala</url>
-          <line>97</line>
+          <line>104</line>
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala</url>
-          <line>91</line>
+          <line>97</line>
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
@@ -980,203 +896,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/io/UnixFileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-575">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/io/FileSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="214" column="56" selection-start-line="214" selection-start-column="56" selection-end-line="214" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/software/maven/repository/org/apache/hbase/hbase-common/1.2.0-cdh5.7.0/hbase-common-1.2.0-cdh5.7.0.jar!/org/apache/hadoop/hbase/HBaseConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/software/maven/repository/org/apache/hbase/hbase-client/1.2.0-cdh5.7.0/hbase-client-1.2.0-cdh5.7.0.jar!/org/apache/hadoop/hbase/client/ConnectionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/core-site.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1625" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hbase-site.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1204" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/software/maven/repository/org/apache/hbase/hbase-client/1.2.0-cdh5.7.0/hbase-client-1.2.0-cdh5.7.0.jar!/org/apache/hadoop/hbase/client/Put.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="91" column="25" lean-forward="true" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/util/ReadHdfsFile.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="16" selection-end-column="64" />
-          <folding>
-            <element signature="e#30#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/io/Serializable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/software/maven/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar!/org/apache/commons/codec/digest/DigestUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="94" column="25" selection-start-line="94" selection-start-column="25" selection-end-line="94" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/common/CommonConst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/PooledHBaseFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2719">
-          <caret line="190" column="48" selection-start-line="190" selection-start-column="30" selection-end-line="190" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/software/maven/repository/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.2.0/spark-streaming-kafka-0-10_2.11-2.2.0.jar!/org/apache/spark/streaming/kafka010/KafkaUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="79" lean-forward="true" selection-start-line="2" selection-start-column="79" selection-end-line="2" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/software/maven/repository/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.2.0/spark-streaming-kafka-0-10_2.11-2.2.0.jar!/org/apache/spark/streaming/kafka010/LocationStrategies.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/HelloScala.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding>
-            <element signature="e#25#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/RowKeyGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/MD5RowKeyGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/HBasePool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/common/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
-          <caret line="188" column="23" selection-start-line="188" selection-start-column="23" selection-end-line="188" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5130#5131#0" expanded="true" />
-            <element signature="e#5171#5172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/PointBaseInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/HelloJava.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -1194,13 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/TopThreeHotProduct.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1230,33 +942,6 @@
           <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
             <element signature="e#33#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/StreamingKafka.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-269">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding>
-            <element signature="e#35#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCountSocket.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="e#35#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1336,42 +1021,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/BaseOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding>
-            <element signature="e#30#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-          <folding>
-            <element signature="e#36#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1392,8 +1047,250 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="346">
           <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="183" column="34" selection-start-line="183" selection-start-column="34" selection-end-line="183" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/MonthlyAverageSalesByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PointNumberOfPeople.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodNet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodPoint.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="e#29#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesTimeInterval.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesUserPurchaseOfGoods.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesVolume.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/TestMap.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetTypeUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/SalesLatAndLng.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/StreamingKafka.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="e#35#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/TopThreeHotProduct.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="e#35#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCountSocket.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/util/ReadHdfsFile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <element signature="e#30#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <element signature="e#30#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/Hello.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/HelloScala.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
