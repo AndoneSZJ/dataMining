@@ -48,7 +48,7 @@ public class Process {
 		}).mapPartitions(new FlatMapFunction<Iterator<String>, Tuple2<String,String>>() {
 			@Override
 			public Iterator<Tuple2<String, String>> call(Iterator<String> stringIterator) throws Exception {
-				ArrayList<Tuple2<String,String>> arrayList = new ArrayList<>();
+				ArrayList<Tuple2<String,String>> arrayList = new ArrayList<Tuple2<String, String>>();
 				while (stringIterator.hasNext()){
 					String s = stringIterator.next();
 					String ss[] = s.split(",");
@@ -85,7 +85,7 @@ public class Process {
 		}).mapPartitions(new FlatMapFunction<Iterator<String>, Tuple2<String,String>>() {
 			@Override
 			public Iterator<Tuple2<String, String>> call(Iterator<String> stringIterator) throws Exception {
-				ArrayList<Tuple2<String,String>> arrayList = new ArrayList<>();
+				ArrayList<Tuple2<String,String>> arrayList = new ArrayList<Tuple2<String, String>>();
 				while (stringIterator.hasNext()){
 					String s = stringIterator.next();
 					String ss[] = s.split(",");
@@ -110,7 +110,7 @@ public class Process {
 		List<Tuple2<String, String>> list = sc.textFile(abnormalPath).mapPartitions(new FlatMapFunction<Iterator<String>, Tuple2<String,String>>() {
 			@Override
 			public Iterator<Tuple2<String, String>> call(Iterator<String> stringIterator) throws Exception {
-				ArrayList<Tuple2<String,String>> arrayList = new ArrayList<>();
+				ArrayList<Tuple2<String,String>> arrayList = new ArrayList<Tuple2<String, String>>();
 				while (stringIterator.hasNext()){
 					String s = stringIterator.next();
 					String ss[] = s.split(",");

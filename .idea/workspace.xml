@@ -2,64 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="079fbdcf-e015-4338-8053-bfadf9b05f5a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/spark.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/spark.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaDirectWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaDirectWordCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaReceiverWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaReceiverWordCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaStreamApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaStreamApp.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/spark/LtStatStreamingApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/spark/LtStatStreamingApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/HelloJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/HelloJava.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/HBaseOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/HBaseOps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaDirectWordCount$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaDirectWordCount$$anonfun$main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaDirectWordCount$$anonfun$main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaDirectWordCount$$anonfun$main$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaDirectWordCount$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaDirectWordCount$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaReceiverWordCount$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaReceiverWordCount$$anonfun$main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaReceiverWordCount$$anonfun$main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaReceiverWordCount$$anonfun$main$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaReceiverWordCount$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaReceiverWordCount$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaStreamApp$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaStreamApp$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaStreamApp$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$main$4$$anonfun$apply$1$$anonfun$apply$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$main$4$$anonfun$apply$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$main$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$main$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$main$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$main$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$main$8$$anonfun$apply$3$$anonfun$apply$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$main$8$$anonfun$apply$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$main$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2$$anonfun$apply$1$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2$$anonfun$apply$1$$anonfun$apply$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2$$anonfun$apply$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCount$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCount$$anonfun$main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCount$$anonfun$main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCount$$anonfun$main$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCount$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCount$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$$anonfun$getDataByOrder$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$$anonfun$getDataByOrder$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$$anonfun$simulationSendOutData$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$$anonfun$simulationSendOutData$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/dataMining-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dataMining-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,8 +48,8 @@
       <file leaf-file-name="SimulationKafkaSendOutData.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="-164">
+              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
               <folding>
                 <element signature="e#30#46#0" expanded="true" />
               </folding>
@@ -98,74 +57,75 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="171" column="17" selection-start-line="155" selection-start-column="16" selection-end-line="171" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ReceiveKafkaData.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StringDeserializer.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/software/maven/repository/org/apache/kafka/kafka-clients/0.10.0.1/kafka-clients-0.10.0.1.jar!/org/apache/kafka/common/serialization/StringDeserializer.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KafkaSink.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/KafkaSink.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Producer.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KafkaReceiverWordCount.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaReceiverWordCount.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            <state relative-caret-position="-497">
+              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
               <folding>
-                <element signature="e#33#66#0" expanded="true" />
+                <element signature="e#36#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KafkaStreamApp.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaStreamApp.scala">
+      <file leaf-file-name="HBaseOps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            <state relative-caret-position="110">
+              <caret line="532" column="9" selection-start-line="532" selection-start-column="9" selection-end-line="532" selection-end-column="9" />
               <folding>
-                <element signature="e#33#66#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#16921#16929#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StreamingKafka.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/StreamingKafka.scala">
+      <file leaf-file-name="Process.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-269">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="1293">
+              <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
               <folding>
-                <element signature="e#35#62#0" expanded="true" />
+                <element signature="e#1573#1597#0" expanded="true" />
+                <element signature="e#2702#2726#0" expanded="true" />
+                <element signature="e#3638#3662#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AvgProcess.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1215">
+              <caret line="81" column="100" selection-start-line="81" selection-start-column="100" selection-end-line="81" selection-end-column="100" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1936#1960#0" expanded="true" />
+                <element signature="e#3125#3149#0" expanded="true" />
+                <element signature="e#4205#4229#0" expanded="true" />
+                <element signature="e#5320#5344#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FP.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -174,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="32">
-              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding>
                 <element signature="e#35#72#0" expanded="true" />
               </folding>
@@ -236,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/dw_zfj_rlb" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/dw_dim_zfj" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala" />
@@ -246,7 +205,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateStat.java" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetTypeUtils.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgaMount.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/MD5RowKeyGenerator.java" />
@@ -262,9 +220,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/common/CommonConst.java" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/HelloScala.scala" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/HelloJava.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaDirectWordCount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/KafkaReceiverWordCount.scala" />
@@ -272,7 +228,11 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/project/spark/LtStatStreamingApp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -323,7 +283,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="803" />
+    <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -366,6 +326,63 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="hbase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="vem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="vem" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="vem" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="vem" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
@@ -492,13 +509,28 @@
             <path>
               <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.kafka:kafka_2.11:0.10.0.1" type="70bed36:NamedLibraryElementNode" />
+              <item name="Maven: org.apache.spark:spark-streaming-kafka-0-10_2.11:2.2.0" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.kafka:kafka_2.11:0.10.0.1" type="70bed36:NamedLibraryElementNode" />
-              <item name="kafka_2.11-0.10.0.1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.apache.spark:spark-streaming-kafka-0-10_2.11:2.2.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="spark-streaming-kafka-0-10_2.11-2.2.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.spark:spark-streaming-kafka-0-10_2.11:2.2.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="spark-streaming-kafka-0-10_2.11-2.2.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.spark:spark-streaming-kafka-0-10_2.11:2.2.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="spark-streaming-kafka-0-10_2.11-2.2.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka010" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -512,10 +544,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -690,7 +722,7 @@
       <workItem from="1526864458530" duration="62634000" />
       <workItem from="1527123263055" duration="37702000" />
       <workItem from="1527209180110" duration="1281000" />
-      <workItem from="1527214224686" duration="6132000" />
+      <workItem from="1527214224686" duration="14119000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1527214314628</created>
@@ -699,11 +731,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527214314628</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="更新spark-streaming-kafka架包，由0-8更新为0-10">
+      <created>1527225139479</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527225139479</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329539000" />
+    <option name="totallyTimeSpent" value="337526000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -725,14 +764,14 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3286119" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.28826895" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.31402004" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32152975" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2733711" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19830029" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.39518413" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30615166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33333334" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="6" weight="0.3297568" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -757,7 +796,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="更新spark-streaming-kafka架包，由0-8更新为0-10" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新spark-streaming-kafka架包，由0-8更新为0-10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -924,21 +964,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/BaseOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="187" column="27" selection-start-line="187" selection-start-column="27" selection-end-line="187" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/software/maven/repository/org/apache/hbase/hbase-common/1.2.0-cdh5.7.0/hbase-common-1.2.0-cdh5.7.0.jar!/org/apache/hadoop/hbase/HConstants.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="83" column="40" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/hbase/HBaseUtil.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1043,13 +1068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="136" column="54" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2719">
@@ -1128,16 +1146,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/HBasePool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
@@ -1187,13 +1195,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ReadMe.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="89" column="16" lean-forward="true" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$USER_HOME$/software/maven/repository/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.2.0/spark-streaming-kafka-0-10_2.11-2.2.0.jar!/org/apache/spark/streaming/kafka010/ConsumerStrategies.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1273,7 +1274,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="e#35#72#0" expanded="true" />
           </folding>
@@ -1290,16 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="e#30#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/software/maven/repository/org/apache/kafka/kafka-clients/0.10.0.1/kafka-clients-0.10.0.1.jar!/org/apache/kafka/common/serialization/StringDeserializer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1307,10 +1298,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/software/maven/repository/org/apache/spark/spark-streaming-kafka-0-10_2.11/2.2.0/spark-streaming-kafka-0-10_2.11-2.2.0.jar!/org/apache/spark/streaming/kafka010/KafkaRDDPartition.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="532" column="9" selection-start-line="532" selection-start-column="9" selection-end-line="532" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#16921#16929#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1293">
+          <caret line="120" column="21" selection-start-line="120" selection-start-column="21" selection-end-line="120" selection-end-column="21" />
+          <folding>
+            <element signature="e#1573#1597#0" expanded="true" />
+            <element signature="e#2702#2726#0" expanded="true" />
+            <element signature="e#3638#3662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="81" column="100" selection-start-line="81" selection-start-column="100" selection-end-line="81" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1936#1960#0" expanded="true" />
+            <element signature="e#3125#3149#0" expanded="true" />
+            <element signature="e#4205#4229#0" expanded="true" />
+            <element signature="e#5320#5344#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="171" column="17" selection-start-line="155" selection-start-column="16" selection-end-line="171" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <element signature="e#30#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        <state relative-caret-position="-497">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding>
+            <element signature="e#36#73#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

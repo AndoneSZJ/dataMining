@@ -14,7 +14,8 @@ import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.slf4j.LoggerFactory
 
-import scala.collection.JavaConversions._//隐式转换
+import scala.collection.JavaConversions._
+//隐式转换
 
 /**
   * Created by IntelliJ IDEA.  
@@ -24,6 +25,7 @@ import scala.collection.JavaConversions._//隐式转换
   */
 object ReceiveKafkaData {
   private final val log = LoggerFactory.getLogger(this.getClass)
+
   def main(args: Array[String]): Unit = {
     //topic
     val topics = Array("seven")
@@ -34,20 +36,20 @@ object ReceiveKafkaData {
     val sparkConf = new SparkConf()
       .setAppName(this.getClass.getSimpleName)
 
-    if(args.length == 0 || args == null){
+    if (args.length == 0 || args == null) {
       sparkConf.setMaster("local[2]")
     }
 
     //创建streaming对象，5秒计算一次
-    val ssc = new StreamingContext(sparkConf,Seconds(5))
-//    kafka  0-8
-//    拆分topic
-//    val topicsSet = topics.split(",").toSet
-//    val kafkaParams = Map[String,String](
-//      "metadata.broker.list"-> brokers)
-//    val kafkaStream = KafkaUtils.createDirectStream[String,String,StringDecoder,StringDecoder](ssc,kafkaParams,topicsSet)
+    val ssc = new StreamingContext(sparkConf, Seconds(5))
+    //    kafka  0-8
+    //    拆分topic
+    //    val topicsSet = topics.split(",").toSet
+    //    val kafkaParams = Map[String,String](
+    //      "metadata.broker.list"-> brokers)
+    //    val kafkaStream = KafkaUtils.createDirectStream[String,String,StringDecoder,StringDecoder](ssc,kafkaParams,topicsSet)
 
-//    kafka  0-10
+    //    kafka  0-10
     val kafkaParams = Map[String, Object](
       "bootstrap.servers" -> brokers,
       "key.deserializer" -> classOf[StringDeserializer],
@@ -56,31 +58,31 @@ object ReceiveKafkaData {
       "auto.offset.reset" -> "latest",
       "enable.auto.commit" -> (false: java.lang.Boolean)
     )
+    //获取实时数据
     val kafkaStream = KafkaUtils.createDirectStream[String, String](
       ssc,
       PreferConsistent,
       Subscribe[String, String](topics, kafkaParams))
 
-
-    val rowKeyGen:RowKeyGenerator[String] = new HashRowKeyGenerator()
+    val rowKeyGen: RowKeyGenerator[String] = new HashRowKeyGenerator()
     val family = "family"
     val qualifier = "qualifier"
-    kafkaStream.map(_.value()).foreachRDD(rdd =>{
-      if(!rdd.isEmpty()) {
-        rdd.foreachPartition(x =>{
+    kafkaStream.map(_.value()).foreachRDD(rdd => {
+      if (!rdd.isEmpty()) {
+        rdd.foreachPartition(x => {
           var puts = List[Put]()
-          x.foreach(row =>{
-            val put = new Put(rowKeyGen.generate(""))//获取rowkey
-            put.addColumn(Bytes.toBytes(family),Bytes.toBytes(qualifier),Bytes.toBytes(row))//插入一条数据
-            puts .::= (put)
+          x.foreach(row => {
+            val put = new Put(rowKeyGen.generate("")) //获取rowkey
+            put.addColumn(Bytes.toBytes(family), Bytes.toBytes(qualifier), Bytes.toBytes(row)) //插入一条数据
+            puts.::=(put)
           })
-          HBaseOps.put("seven",puts)//工具类，批量插入数据
-          log.info("put hbase is success . . .")
+          HBaseOps.put("seven", puts) //工具类，批量插入数据
+          log.info(s"Inserting ${puts.size} lines of data to hbase is success . . .")
         })
       }
     })
 
-    ssc.start()//启动计算
+    ssc.start() //启动计算
     ssc.awaitTermination()
   }
 }

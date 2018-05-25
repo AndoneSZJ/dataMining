@@ -522,7 +522,7 @@ public class HBaseOps {
                 scan.setStopRow(Bytes.toBytes(stopRow));
             }
             ResultScanner scanner = table.getScanner(scan);
-            List<Result> results = new ArrayList<>();
+            List<Result> results = new ArrayList<Result>();
             for (Result result : scanner) {
                 results.add(result);
             }
