@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="079fbdcf-e015-4338-8053-bfadf9b05f5a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/spark.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/spark.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2$$anonfun$apply$1$$anonfun$apply$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2$$anonfun$apply$1$$anonfun$apply$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2$$anonfun$apply$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$$anonfun$simulationSendOutData$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$$anonfun$simulationSendOutData$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dataMining-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dataMining-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,19 +41,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="171" column="17" selection-start-line="155" selection-start-column="16" selection-end-line="171" selection-end-column="17" />
+            <state relative-caret-position="401">
+              <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReceiveKafkaData.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReceiveKafkaData.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-497">
+            <state relative-caret-position="375">
               <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
               <folding>
                 <element signature="e#36#73#0" expanded="true" />
@@ -170,6 +154,7 @@
       <find>createTime</find>
       <find>vagMoney</find>
       <find>s</find>
+      <find>&lt;target&gt;8&lt;/target&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -262,19 +247,6 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="dataMining" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="dataMining" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.apache.spark:spark-streaming-kafka-0-10_2.11:2.2.0" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="dataMining" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.apache.spark:spark-streaming-kafka-0-10_2.11:2.2.0" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-          <item name="org.apache.kafka:kafka_2.11:0.10.0.1" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
       </expand>
       <select />
@@ -722,7 +694,7 @@
       <workItem from="1526864458530" duration="62634000" />
       <workItem from="1527123263055" duration="37702000" />
       <workItem from="1527209180110" duration="1281000" />
-      <workItem from="1527214224686" duration="14119000" />
+      <workItem from="1527214224686" duration="14388000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1527214314628</created>
@@ -738,11 +710,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527225139479</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更新pom文件，自由选取是否打包全部依赖">
+      <created>1527234334516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527234334516</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="337526000" />
+    <option name="totallyTimeSpent" value="337795000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -755,6 +734,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="803" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -766,12 +746,12 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.31402004" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2733711" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2917847" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.39518413" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33333334" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33333334" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="6" weight="0.3297568" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -797,7 +777,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
     <MESSAGE value="更新spark-streaming-kafka架包，由0-8更新为0-10" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新spark-streaming-kafka架包，由0-8更新为0-10" />
+    <MESSAGE value="更新pom文件，自由选取是否打包全部依赖" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新pom文件，自由选取是否打包全部依赖" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1349,13 +1330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="171" column="17" selection-start-line="155" selection-start-column="16" selection-end-line="171" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-164">
@@ -1368,11 +1342,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-497">
+        <state relative-caret-position="375">
           <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
           <folding>
             <element signature="e#36#73#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="90" column="21" lean-forward="true" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
         </state>
       </provider>
     </entry>
