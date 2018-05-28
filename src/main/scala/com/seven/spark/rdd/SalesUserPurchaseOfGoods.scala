@@ -27,15 +27,15 @@ object SalesUserPurchaseOfGoods {
 
     log.info(this.getClass.getSimpleName + "\t is start . . .")
 
-    val orderPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/order/*"
+    val orderPath = "/yst/vem/sales/order/*"
 
     val rdd = salesOrderByUser(sc, orderPath)
 
-    val userAllPath = "/Users/seven/data/user/all/"
+    val userAllPath = "/yst/seven/data/user/all/"
 
     salesUseAll(userAllPath, rdd)
 
-    val userPath = "/Users/seven/data/user/day/"
+    val userPath = "/yst/seven/data/user/day/"
 
     salesUser(userPath, rdd)
     stopWatch.stop()

@@ -19,7 +19,7 @@ object SalesNumInNetByZfj {
   val sc = new SparkContext(conf)
 
   def main(args: Array[String]): Unit = {
-    val path = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_ods/dw_dim_zfj/*"
+    val path = "/yst/sta_ods/dw_dim_zfj/*"
     salesNumByZfj(path)
   }
 
@@ -64,7 +64,7 @@ object SalesNumInNetByZfj {
       list.iterator
     }).cache()
 
-    data.repartition(1).saveAsTextFile("/Users/seven/data/zfiNum/zfj/")
+    data.repartition(1).saveAsTextFile("/yst/seven/data/zfiNum/zfj/")
   }
 
 }

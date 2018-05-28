@@ -32,15 +32,15 @@ object MonthlyAverageSalesByZfj {
     log.info("job is start ...")
     val stopWatch = new StopWatch()
     stopWatch.start()
-    val channelPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_ods/dw_dim_zfj/*"
+    val channelPath = "/yst/sta_ods/dw_dim_zfj/*"
     val channelMap = getChannelByNet(channelPath)
     val channelBv = sc.broadcast(channelMap)
 
-    val abnormalPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/zfj/result/abnormalVM/*"
+    val abnormalPath = "/yst/zfj/result/abnormalVM/*"
     val abnormalMap = getAbnormalByZfj(abnormalPath)
     val abnormalBv = sc.broadcast(abnormalMap)
 
-    val path = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/zfj/DW_ZFJ_RLB_ALL/*"
+    val path = "/yst/zfj/DW_ZFJ_RLB_ALL/*"
     getMonthlyAverageSalesByZfj(path, channelBv, abnormalBv)
     stopWatch.stop()
     log.info("job is success timeout is " + stopWatch.toString)
@@ -336,6 +336,6 @@ object MonthlyAverageSalesByZfj {
       hashMap.iterator
     }) //.cache()
     data.take(3)
-    //data.repartition(1).saveAsTextFile("hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/seven/monthlyAverageSalesByZfj/")
+    //data.repartition(1).saveAsTextFile("/yst/vem/sales/seven/monthlyAverageSalesByZfj/")
   }
 }

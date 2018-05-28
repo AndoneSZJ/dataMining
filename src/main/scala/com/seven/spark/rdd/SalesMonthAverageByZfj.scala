@@ -39,12 +39,12 @@ object SalesMonthAverageByZfj {
     val stopWatch = new StopWatch()
     stopWatch.start()
 
-    val abnormalPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/zfj/result/abnormalVM/*"
+    val abnormalPath = "/yst/zfj/result/abnormalVM/*"
     val abnormalMap = getSalesAbnormalByZfj(abnormalPath, sc)
     val abnormalBv = sc.broadcast(abnormalMap)
 
 
-    val orderPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/zfj/find/DW_ZFJ_RLB_ALL/*"
+    val orderPath = "/yst/zfj/find/DW_ZFJ_RLB_ALL/*"
     salesAverageMonthInNetByZfj(orderPath, abnormalBv, sc)
 
     stopWatch.stop()
@@ -152,8 +152,8 @@ object SalesMonthAverageByZfj {
       list.iterator
     }).cache()
     log.info("order data sales is success . . . ")
-    Utils.saveHdfs(data, sc, "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/seven/SalesMonthAverageByZfj/", 0)
-    //data.repartition(1).saveAsTextFile("hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/seven/SalesMonthAverageByZfj/")
+    Utils.saveHdfs(data, sc, "/yst/vem/sales/seven/SalesMonthAverageByZfj/", 0)
+    //data.repartition(1).saveAsTextFile("/yst/vem/sales/seven/SalesMonthAverageByZfj/")
     log.info("data write hdfs is success . . . ")
   }
 }

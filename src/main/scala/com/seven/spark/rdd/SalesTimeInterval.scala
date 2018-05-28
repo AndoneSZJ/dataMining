@@ -34,7 +34,7 @@ object SalesTimeInterval {
     stopWatch.start()
 
     //小区数据路径
-    val pathCommunity = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/net_community/*"
+    val pathCommunity = "/yst/sta_vem/net_community/*"
 
     //获取小区map
     val communityMap = salesCommunity(sc, pathCommunity)
@@ -43,7 +43,7 @@ object SalesTimeInterval {
     val communityMapBv: Broadcast[util.HashMap[String, String]] = sc.broadcast(communityMap)
 
     //网点数据路径
-    val pathNettype = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/vem_nettype/*"
+    val pathNettype = "/yst/sta_vem/vem_nettype/*"
 
     //获取网点map
     val nettypeMap = salesNettype(sc, pathNettype, communityMapBv)
@@ -52,7 +52,7 @@ object SalesTimeInterval {
     val nettypeBv = sc.broadcast(nettypeMap)
 
     //自贩机数据路径
-    //val pathMachine = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/vem_machine/*"
+    //val pathMachine = "/yst/sta_vem/vem_machine/*"
 
     //获取自贩机map
     //val machineMap = salesMachine(sc,pathMachine)
@@ -61,13 +61,13 @@ object SalesTimeInterval {
     //val machineBv = sc.broadcast(machineMap)
 
     //订单数据路径
-    //val orderPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/vem_order/*"
-    val orderPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/order/"
+    //val orderPath = "/yst/sta_vem/vem_order/*"
+    val orderPath = "/yst/vem/sales/order/"
 
     //获取结果
     val data = salesOrder(sc, orderPath, nettypeBv)
 
-    data.map(x => (x._2.toString.substring(0, x._2.toString.length - 1))).repartition(1).saveAsTextFile("/Users/seven/data/order/")
+    data.map(x => (x._2.toString.substring(0, x._2.toString.length - 1))).repartition(1).saveAsTextFile("/yst/seven/data/order/")
 
     stopWatch.stop()
     sc.stop()

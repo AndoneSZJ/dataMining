@@ -25,11 +25,11 @@ object SalesGoodNet {
   val sc = new SparkContext(conf)
 
   def main(args: Array[String]): Unit = {
-    val operatePath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/operate/N/main/*"
+    val operatePath = "/yst/vem/operate/N/main/*"
     val operateMap = getNetOperateTime(operatePath)
     //广播
     val operateBv = sc.broadcast(operateMap)
-    val orderPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/order/*"
+    val orderPath = "/yst/vem/sales/order/*"
     val rdd = getOrderData(orderPath, operateBv)
 
     getNetByMoneyThan10(rdd)

@@ -28,19 +28,19 @@ object SalesGoodPoint {
   val sc = new SparkContext(conf)
 
   def main(args: Array[String]): Unit = {
-    val operatePath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/operate/P/main/*"
+    val operatePath = "/yst/vem/operate/P/main/*"
     val operateMap = getPointOperateTime(operatePath)
     //广播
     val operateBv = sc.broadcast(operateMap)
 
-    val orderPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/order/*"
+    val orderPath = "/yst/vem/sales/order/*"
     val rdd = getOrderPointData(orderPath)
 
     getPointByMoneyThan60(rdd, operateBv)
 
     getPointyMoneyThan5(rdd, operateBv)
 
-    val pointPath = "/Users/seven/data/pointData/*"
+    val pointPath = "/yst/seven/data/pointData/*"
     salesNullPoint(pointPath, rdd)
 
   }

@@ -29,7 +29,7 @@ object NetType {
     val stopWatch: StopWatch = new StopWatch()
     stopWatch.start()
     log.info("load vem_nettype is start")
-    val vemNettypePath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/vem_nettype/*"
+    val vemNettypePath = "/yst/sta_vem/vem_nettype/*"
     saveType(vemNettypePath)
     stopWatch.stop()
     log.info("load vem_nettype is success timeout is " + stopWatch.toString)
@@ -38,8 +38,8 @@ object NetType {
     //写point数据
     log.info("save point data is start")
     stopWatch.start()
-    val pointCommunityPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/point_community/*"
-    val pointPath = "/Users/seven/data/pointData/"
+    val pointCommunityPath = "/yst/sta_vem/point_community/*"
+    val pointPath = "/yst/seven/data/pointData/"
     writePointData(pointCommunityPath, pointPath)
     stopWatch.stop()
     log.info("save point data is success timeout is " + stopWatch.toString)
@@ -48,8 +48,8 @@ object NetType {
     //写net数据
     log.info("save net data is start")
     stopWatch.start()
-    val netCommunityPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/net_community/*"
-    val netPath = "/Users/seven/data/netData/"
+    val netCommunityPath = "/yst/sta_vem/net_community/*"
+    val netPath = "/yst/seven/data/netData/"
     writeNetData(netCommunityPath, netPath)
     stopWatch.stop()
     log.info("save net data is success timeout is " + stopWatch.toString)

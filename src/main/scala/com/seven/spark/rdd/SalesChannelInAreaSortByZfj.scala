@@ -33,66 +33,66 @@ object SalesChannelInAreaSortByZfj {
     log.info("job is start ...")
     val stopWatch = new StopWatch()
     stopWatch.start()
-    val path = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/seven/SalesMonthAverageByZfj/*"
+    val path = "/yst/vem/sales/seven/SalesMonthAverageByZfj/*"
     log.info("load data is start . . .")
     val rdd = salesSortByArea(path)
     log.info("load data is success . . .")
-    //val savePath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/seven/SalesMonthAverageByZfj/*"
+    //val savePath = "/yst/vem/sales/seven/SalesMonthAverageByZfj/*"
     log.info("save data is start . . .")
     //log.info("savePath is "+ savePath)
 
     log.info("save data is success . . .")
 
     val month1 = "2017-05"
-    val monthPath1 = s"/Users/seven/data/salesChannelInAreaSortByZfj/${month1}/"
+    val monthPath1 = s"/yst/seven/data/salesChannelInAreaSortByZfj/${month1}/"
     saveDataToHdfs(monthPath1, rdd, month1)
     log.info("save data is success . . .")
 
     val month2 = "2017-06"
-    val monthPath2 = s"/Users/seven/data/salesChannelInAreaSortByZfj/${month2}/"
+    val monthPath2 = s"/yst/seven/data/salesChannelInAreaSortByZfj/${month2}/"
     saveDataToHdfs(monthPath2, rdd, month2)
     log.info("save data is success . . .")
 
     val month3 = "2017-07"
-    val monthPath3 = s"/Users/seven/data/salesChannelInAreaSortByZfj/${month3}/"
+    val monthPath3 = s"/yst/seven/data/salesChannelInAreaSortByZfj/${month3}/"
     saveDataToHdfs(monthPath3, rdd, month3)
 
     val month4 = "2017-08"
-    val monthPath4 = s"/Users/seven/data/salesChannelInAreaSortByZfj/${month4}/"
+    val monthPath4 = s"/yst/seven/data/salesChannelInAreaSortByZfj/${month4}/"
     saveDataToHdfs(monthPath4, rdd, month4)
 
     val month5 = "2017-09"
-    val monthPath5 = s"/Users/seven/data/salesChannelInAreaSortByZfj/${month5}/"
+    val monthPath5 = s"/yst/seven/data/salesChannelInAreaSortByZfj/${month5}/"
     saveDataToHdfs(monthPath5, rdd, month5)
 
     val month6 = "2017-10"
-    val monthPath6 = s"/Users/seven/data/salesChannelInAreaSortByZfj/${month6}/"
+    val monthPath6 = s"/yst/seven/data/salesChannelInAreaSortByZfj/${month6}/"
     saveDataToHdfs(monthPath6, rdd, month6)
 
     val month7 = "2017-11"
-    val monthPath7 = s"/Users/seven/data/salesChannelInAreaSortByZfj/${month7}/"
+    val monthPath7 = s"/yst/seven/data/salesChannelInAreaSortByZfj/${month7}/"
     saveDataToHdfs(monthPath7, rdd, month7)
     log.info("save data is success . . .")
 
     val month8 = "2017-12"
-    val monthPath8 = s"/Users/seven/data/salesChannelInAreaSortByZfj/${month8}/"
+    val monthPath8 = s"/yst/seven/data/salesChannelInAreaSortByZfj/${month8}/"
     saveDataToHdfs(monthPath8, rdd, month8)
     log.info("save data is success . . .")
 
     val month9 = "2018-01"
-    val monthPath9 = s"/Users/seven/data/salesChannelInAreaSortByZfj/${month9}/"
+    val monthPath9 = s"/yst/seven/data/salesChannelInAreaSortByZfj/${month9}/"
     saveDataToHdfs(monthPath9, rdd, month9)
 
     val month10 = "2018-02"
-    val monthPath10 = s"/Users/seven/data/salesChannelInAreaSortByZfj/${month10}/"
+    val monthPath10 = s"/yst/seven/data/salesChannelInAreaSortByZfj/${month10}/"
     saveDataToHdfs(monthPath10, rdd, month10)
 
     val month11 = "2018-03"
-    val monthPath11 = s"/Users/seven/data/salesChannelInAreaSortByZfj/${month11}/"
+    val monthPath11 = s"/yst/seven/data/salesChannelInAreaSortByZfj/${month11}/"
     saveDataToHdfs(monthPath11, rdd, month11)
 
     val month12 = "2018-04"
-    val monthPath12 = s"/Users/seven/data/salesChannelInAreaSortByZfj/${month12}/"
+    val monthPath12 = s"/yst/seven/data/salesChannelInAreaSortByZfj/${month12}/"
     saveDataToHdfs(monthPath12, rdd, month12)
 
     stopWatch.stop()

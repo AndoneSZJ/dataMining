@@ -26,10 +26,10 @@ object SalesSexByOrder {
     log.info("job is start ...")
     val stopWatch = new StopWatch()
     stopWatch.start()
-    val userPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/user/main/*"
+    val userPath = "/yst/vem/user/main/*"
     val userMap = salesSexByUser(userPath)
     val userBv = sc.broadcast(userMap)
-    val orderPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/order/*"
+    val orderPath = "/yst/vem/sales/order/*"
     //    val order = salesUserSexByOrder(orderPath,userBv)
     val order = salesUserSexByPeople(orderPath, userBv)
     order.foreach(println)

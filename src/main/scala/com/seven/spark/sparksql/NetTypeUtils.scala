@@ -24,7 +24,7 @@ object NetTypeUtils {
     * @return
     */
   def salesPointData(sc: SparkContext): util.HashMap[String, String] = {
-    val point = sc.textFile("/Users/seven/data/pointData/*")
+    val point = sc.textFile("/yst/seven/data/pointData/*")
       .filter(x => !"id".equals(x.toString.split(",")(0))) //去列头
       .mapPartitions(x => {
       var list = List[(String, String)]()
@@ -50,7 +50,7 @@ object NetTypeUtils {
     * @return
     */
   def salesNetData(sc: SparkContext): util.HashMap[String, String] = {
-    val net = sc.textFile("/Users/seven/data/netData/*")
+    val net = sc.textFile("/yst/seven/data/netData/*")
       .filter(x => !"id".equals(x.toString.split(",")(0))) //去除列头
       .mapPartitions(x => {
       var list = List[(String, String)]()

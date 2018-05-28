@@ -34,7 +34,7 @@ object PointNumberOfPeople {
 
 
     //小区数据路径
-    val pathCommunity = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/net_community/*"
+    val pathCommunity = "/yst/sta_vem/net_community/*"
 
     //获取小区map
     //val communityMap = salesByCommunity(sc,pathCommunity)
@@ -43,7 +43,7 @@ object PointNumberOfPeople {
     //val communityMapBv:Broadcast[util.HashMap[String, String]] = sc.broadcast(communityMap)
 
     //网点数据路径
-    val pathNettype = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/vem_nettype/*"
+    val pathNettype = "/yst/sta_vem/vem_nettype/*"
 
     //获取网点map
     val nettypeMap = salesByNettype(sc, pathNettype)
@@ -52,12 +52,12 @@ object PointNumberOfPeople {
     val nettypeBv = sc.broadcast(nettypeMap)
 
     //订单数据路径
-    val orderPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/order/"
+    val orderPath = "/yst/vem/sales/order/"
 
     val data = salesPointNum(sc, orderPath, nettypeBv)
 
     data.foreach(x => println(x._1 + "," + x._2))
-    data.map(x => (x._2)).repartition(1).saveAsTextFile("/Users/seven/data/point/")
+    data.map(x => (x._2)).repartition(1).saveAsTextFile("/yst/seven/data/point/")
 
 
     stopWatch.stop()

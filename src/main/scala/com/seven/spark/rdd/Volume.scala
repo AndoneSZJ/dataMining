@@ -30,24 +30,24 @@ object Volume {
     stopWatch.start()
 
     //全国
-    val orderpathByA = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/stat/A/main"
-    val operatePathByA = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/operate/A/main"
-    val writeA = "/Users/seven/data/Volume/A"
+    val orderpathByA = "/yst/vem/sales/stat/A/main"
+    val operatePathByA = "/yst/vem/operate/A/main"
+    val writeA = "/yst/seven/data/Volume/A"
     salesOperate(operatePathByA, orderpathByA, writeA)
     //城市
-    val orderpathByC = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/stat/C/main"
-    val operatePathByC = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/operate/C/main"
-    val writeC = "/Users/seven/data/Volume/C"
+    val orderpathByC = "/yst/vem/sales/stat/C/main"
+    val operatePathByC = "/yst/vem/operate/C/main"
+    val writeC = "/yst/seven/data/Volume/C"
     salesOperate(operatePathByC, orderpathByC, writeC)
     //网点
-    val orderpathByN = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/stat/N/main"
-    val operatePathByN = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/operate/N/main"
-    val writeN = "/Users/seven/data/Volume/N"
+    val orderpathByN = "/yst/vem/sales/stat/N/main"
+    val operatePathByN = "/yst/vem/operate/N/main"
+    val writeN = "/yst/seven/data/Volume/N"
     salesOperate(operatePathByN, orderpathByN, writeN)
     //点位
-    val orderpathByP = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/stat/P/main"
-    val operatePathByP = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/operate/P/main"
-    val writeP = "/Users/seven/data/Volume/P"
+    val orderpathByP = "/yst/vem/sales/stat/P/main"
+    val operatePathByP = "/yst/vem/operate/P/main"
+    val writeP = "/yst/seven/data/Volume/P"
     salesOperate(operatePathByP, orderpathByP, writeP)
 
     stopWatch.stop()

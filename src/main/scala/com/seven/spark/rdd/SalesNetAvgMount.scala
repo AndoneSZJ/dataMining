@@ -5,6 +5,7 @@ import java.util
 import java.util.Date
 
 import com.seven.spark.sparksql.NetTypeUtils
+import com.seven.spark.utils.Utils
 import org.apache.commons.lang.time.StopWatch
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.{SparkConf, SparkContext}
@@ -39,15 +40,16 @@ object SalesNetAvgMount {
     val stopWatch = new StopWatch()
     stopWatch.start()
 
-    val operatePath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/operate/N/main/*"
+    val operatePath = "/yst/vem/operate/N/main/*"
     val operateMap = getOperateTimeByNet(operatePath)
     val operateBv = sc.broadcast(operateMap)
 
     val basicNetMap = NetTypeUtils.salesNetData(sc)
     val basicNetBv = sc.broadcast(basicNetMap)
 
-    val orderPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/order/*"
+    val orderPath = "/yst/vem/sales/order/*"
     getOrderDataNet(orderPath, operateBv, basicNetBv)
+    getOrderDataNetByPointThan30(orderPath, operateBv, basicNetBv)
     stopWatch.stop()
 
     log.info("job is success spend time is " + stopWatch.toString)
@@ -64,13 +66,14 @@ object SalesNetAvgMount {
       val hashMap = new mutable.HashMap[String, String]()
       x.foreach(row => {
         val line = row.replace("(", "").split(",")
-        val netId = line(0)
         //网点id
-        val time = line(2)
+        val netId = line(0)
         //运营时间
-        val pointNum = line(10)
+        val time = line(2)
         //点位数
-        val machineNum = line(4) //机器数
+        val pointNum = line(10)
+        //机器数
+        val machineNum = line(4)
         hashMap.put(netId, time + "@" + pointNum + "," + machineNum)
       })
       hashMap.iterator
@@ -148,7 +151,113 @@ object SalesNetAvgMount {
         })
         list.iterator
       }).cache()
-    order.repartition(1).saveAsTextFile("/Users/seven/data/orderData/SalesNetAvgMount/")
+//    order.repartition(1).saveAsTextFile("/yst/seven/data/orderData/SalesNetAvgMount/")
+    Utils.saveHdfs(order,sc,"/yst/seven/data/orderData/SalesNetAvgMount/")
+  }
+
+
+  /**
+    * 获取7天内的销售数据
+    * 网点，日均超过30，点位数
+    * @param path
+    */
+  def getOrderDataNetByPointThan30(path: String, operateBv: Broadcast[util.HashMap[String, String]], basicNetBv: Broadcast[util.HashMap[String, String]]): Unit = {
+    val df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+    val date = new Date()
+    val long = 1000 * 3600 * 24 * 7L
+    val order = sc.textFile(path).filter(x => {
+      //选取7天内的销售数据
+      val line = x.split(",")
+      val time = line(0)
+      val money = line(4)
+      //销售金额
+      val map = operateBv.value
+      map.containsKey(line(8)) && money.toDouble < 15000 && !"100.0".equals(money) && df.parse(time).getTime > date.getTime - long //过滤7天以外的数据，过滤运营天数不足的网点，过滤活动订单，大额订单
+    }).mapPartitions(x => {
+      var list = List[(String, String)]()
+      x.foreach(row => {
+        val line = row.split(",")
+        val netId = line(8)
+        val pointId = line(9)
+        //网点id
+        val city = line(10)
+        //城市
+        val money = line(4).toDouble //订单金额
+        list.::=(netId + "," + city, pointId+","+money)
+      })
+      list.iterator
+    }).reduceByKey(_+"@"+_)
+      .mapPartitions(x =>{
+        var list = List[String]()
+        x.foreach(row =>{
+          val lines = row._2.split("@")
+        //增加运营天数
+          val netId = row._1.split(",")(0)
+          val operateMap = operateBv.value
+          val basicNetMap = basicNetBv.value
+          val operate = operateMap.get(netId)
+
+          var map:Map[String,Double] = Map()
+          for(l <- lines){
+            val line = l.split(",")
+            if(map.contains(line(0))){
+              map += (line(0) -> (map.get(line(0)).getOrElse(0.0)+line(1).toDouble))
+            }else{
+              map += (line(0) -> line(1).toDouble)
+            }
+          }
+
+          var numThan30 = 0
+          var numThan60 = 0
+          var numThan100 = 0
+          for(m <- map){
+            val avgMoney = m._2 / 7 / 100
+            if(avgMoney >= 30){
+              numThan30 += 1
+            }
+            if(avgMoney >= 60){
+              numThan60 += 1
+            }
+            if(avgMoney >= 100){
+              numThan100 += 1
+            }
+          }
+
+          var pointNum = ""
+          if(operate != null){
+            pointNum = operate.split(",")(0)
+          }
+
+          val net = basicNetMap.get(netId)
+          var netBasic = ""
+
+          if (net == null) {
+            netBasic = ","+numThan100+"/"+numThan60+"/" + numThan30+"/" + pointNum
+          } else {
+            val basic = net.split(",")
+            //网点名称
+            val netName = basic(1)
+            //小区户数
+            //val householdTotalNum = basic(25)
+            //入住户数
+            //val householdCheckInNum = basic(16)
+            //物业费
+            //val propertyCosts = basic(22)
+            //val time = (date.getTime - df.parse(basic(21)).getTime) / (1000 * 60 * 60 * 24L) / 365 //小区运行多少年
+            //netBasic = netName + "," + householdTotalNum + "," + householdCheckInNum + "," + time + "," + propertyCosts + "," + operate
+            netBasic = (netName +","+numThan100+"/"+numThan60+"/" + numThan30+"/"+pointNum)
+          }
+
+//          var avgMoney: Double = 0.0
+//          avgMoney = row._2 / 7 / 100
+//          val money = avgMoney.formatted("%.2f")
+//          list.::=(row._1 + "," + money + "," + netBasic)
+          list .::= (row._1 +","+netBasic)
+        })
+        list.iterator
+      }).cache()
+    Utils.saveHdfs(order,sc,"/yst/seven/data/orderData/getOrderDataNetByPointThan30/")
+//    order.repartition(1).saveAsTextFile("/yst/seven/data/orderData/getOrderDataNetByPointThan30/")
   }
 
 

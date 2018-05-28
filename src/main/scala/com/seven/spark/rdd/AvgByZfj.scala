@@ -24,7 +24,7 @@ object AvgByZfj {
     log.info("job is start . . .")
     val stopwatch = new StopWatch()
     stopwatch.start()
-    val path = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/zfj/find/ZFJ_DATA/*"
+    val path = "/yst/zfj/find/ZFJ_DATA/*"
 
     salesAvgByZfj(path)
     stopwatch.stop()
@@ -92,7 +92,7 @@ object AvgByZfj {
       list.iterator
     }).cache()
 
-    data.repartition(1).saveAsTextFile("/Users/seven/data/avgZfj")
+    data.repartition(1).saveAsTextFile("/yst/seven/data/avgZfj")
   }
 
 }

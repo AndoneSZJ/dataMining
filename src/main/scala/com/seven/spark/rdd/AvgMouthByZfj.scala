@@ -33,7 +33,7 @@ object AvgMouthByZfj {
     log.info("job is start . . .")
     val stopwatch = new StopWatch()
     stopwatch.start()
-    val zfjPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_ods/dw_dim_zfj/*"
+    val zfjPath = "/yst/sta_ods/dw_dim_zfj/*"
     //获取自贩机基础信息
     val rdd = getBasicDataByZfj(zfjPath, sc)
     //获取渠道id->渠道名称
@@ -44,12 +44,12 @@ object AvgMouthByZfj {
     val areaMap = getAreaNameByZfj(rdd)
     //广播
     val areaBv = sc.broadcast(areaMap)
-    val abnormalPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/zfj/result/abnormalVM/*"
+    val abnormalPath = "/yst/zfj/result/abnormalVM/*"
     //获取异常自贩机信息
     val abnormalMap = getAbnormalDataByZfj(abnormalPath, sc)
     //广播
     val abnormalBv = sc.broadcast(abnormalMap)
-    val path = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/zfj/find/DW_ZFJ_RLB_ALL/*"
+    val path = "/yst/zfj/find/DW_ZFJ_RLB_ALL/*"
     getAvgMouthDataByZfj(path, sc, abnormalBv, channelBv, areaBv)
     stopwatch.stop()
     log.info("job is success . . .  spend time is " + stopwatch.toString)
@@ -207,7 +207,7 @@ object AvgMouthByZfj {
       val channelName = channelMap.get(x._1)
       (channelName + "," + upper + "," + q3 + "," + middle + "," + q1 + "," + lower)
     }).cache()
-    val savePath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/zfj/find/ZFJ_AVG_DATA/"
+    val savePath = "/yst/zfj/find/ZFJ_AVG_DATA/"
     Utils.saveHdfs(data, sc, savePath, 1)
     //    data.repartition(1).saveAsTextFile(savePath)
 

@@ -34,15 +34,15 @@ object SalesVolume {
 
     val conf = new SparkConf().setMaster("local[2]").setAppName(this.getClass.getSimpleName)
     val sc = new SparkContext(conf)
-    //    val net = "/Users/seven/Downloads/nettype"
+    //    val net = "/yst/seven/Downloads/nettype"
     //    val netMap = nettypeData(sc,net)
-    //    val netpath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/vem_nettype/*"
+    //    val netpath = "/yst/sta_vem/vem_nettype/*"
     //    val netMap = nettypeData(sc,netpath)
     //    val netBv = sc.broadcast(netMap)
 
 
     //网点数据路径
-    val pathNettype = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/vem_nettype/*"
+    val pathNettype = "/yst/sta_vem/vem_nettype/*"
 
     //获取网点map
     val nettypeMap = salesByNettypeName(sc, pathNettype)
@@ -50,22 +50,22 @@ object SalesVolume {
     //广播网点关系
     val nettypeBv = sc.broadcast(nettypeMap)
 
-    val pointPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/info/point/*"
+    val pointPath = "/yst/vem/info/point/*"
     val pointMap = salesPoint(sc, pointPath)
     val pointBv = sc.broadcast(pointMap)
 
 
-    val netTimePath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/operate/N/main/*"
+    val netTimePath = "/yst/vem/operate/N/main/*"
     val netTimeMap = salesByMachineNum(sc, netTimePath)
     val netTimeBv = sc.broadcast(netTimeMap)
 
-    //    val orderPath = "/Users/seven/Downloads/order"
-    val orderPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/order/"
+    //    val orderPath = "/yst/seven/Downloads/order"
+    val orderPath = "/yst/vem/sales/order/"
     val order = salesOrderData(sc, orderPath, netTimeBv, pointBv, nettypeBv)
 
     order.foreach(x => println(x._2.split(",")(0)))
 
-    //order.map(x => (x._1+","+x._2)).repartition(1).saveAsTextFile("/Users/seven/data/salesVolume/")
+    //order.map(x => (x._1+","+x._2)).repartition(1).saveAsTextFile("/yst/seven/data/salesVolume/")
 
     //    println(coefficientOfVariation(("21260.0&10640.0&9480.0")))
     // println(order.count())

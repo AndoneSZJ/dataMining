@@ -40,25 +40,25 @@ object Clustering {
     stopWatch.start()
 
     //机器数路径
-    val pathMachine = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/operate/P/main/"
+    val pathMachine = "/yst/vem/operate/P/main/"
     //获取map
     val machineMap = clusteringByMachineNum(sc, pathMachine)
     //广播
     val machineBv = sc.broadcast(machineMap)
 
     //产品数
-    val pathDisp = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/disp/point/static/main/"
+    val pathDisp = "/yst/vem/disp/point/static/main/"
     val dispMap = clusteringByDisp(sc, pathDisp)
     val dispBv = sc.broadcast(dispMap)
 
 
     //    //小区数据路径
-    //    val pathCommunity = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/net_community/*"
+    //    val pathCommunity = "/yst/sta_vem/net_community/*"
     //    val communityMap = clusteringByCommunity(sc,pathCommunity)
     //    val communityBv = sc.broadcast(communityMap)
 
     //网点数据路径
-    val pathNettype = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/vem_nettype/*"
+    val pathNettype = "/yst/sta_vem/vem_nettype/*"
 
     //获取网点map
     val nettypeMap = clusteringNettype(sc, pathNettype)
@@ -66,12 +66,12 @@ object Clustering {
     //广播网点关系
     val nettypeBv = sc.broadcast(nettypeMap)
 
-    val srcPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/operate/N/main/"
+    val srcPath = "/yst/vem/operate/N/main/"
 
     val pointNumMap = clusteringPointNum(sc, pathNettype, srcPath)
     val pointNumBv = sc.broadcast(pointNumMap)
 
-    val userPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/user/main/"
+    val userPath = "/yst/vem/user/main/"
     val userMap = clusteringByUser(sc, userPath)
     val userBv = sc.broadcast(userMap)
 
@@ -85,7 +85,7 @@ object Clustering {
 
 
     //订单数据路径
-    val orderPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/order/"
+    val orderPath = "/yst/vem/sales/order/"
 
     val orderMap = clusteringOrder(sc, orderPath, machineBv, dispBv, nettypeBv, userBv, pointDataBv, netDataBv)
 
@@ -95,28 +95,28 @@ object Clustering {
     val activityUserBv = sc.broadcast(activityUserMap)
 
 
-    val pointPath = "/Users/seven/data/pointData/*"
+    val pointPath = "/yst/seven/data/pointData/*"
 
     val data = pointCommunity(sc, pointPath, orderBv, machineBv, dispBv, activityUserBv, pointDataBv, netDataBv, pointNumBv)
 
 
-    val goodNetThan250Path = "/Users/seven/data/orderData/goodNetThan250.csv"
-    val goodNetThan250SavePath = "/Users/seven/data/orderData/goodNetThan250/"
+    val goodNetThan250Path = "/yst/seven/data/orderData/goodNetThan250.csv"
+    val goodNetThan250SavePath = "/yst/seven/data/orderData/goodNetThan250/"
     goodNetThan250(sc, goodNetThan250Path, data, goodNetThan250SavePath)
-    val goodPointThan60Path = "/Users/seven/data/orderData/goodPointThan60.csv"
-    val goodPointThan60SavePath = "/Users/seven/data/orderData/goodPointThan60/"
+    val goodPointThan60Path = "/yst/seven/data/orderData/goodPointThan60.csv"
+    val goodPointThan60SavePath = "/yst/seven/data/orderData/goodPointThan60/"
     goodNetThan250(sc, goodPointThan60Path, data, goodPointThan60SavePath)
-    val badPointThan5Path = "/Users/seven/data/orderData/badPointThan5.csv"
-    val badPointThan5SavePath = "/Users/seven/data/orderData/badPointThan5/"
+    val badPointThan5Path = "/yst/seven/data/orderData/badPointThan5.csv"
+    val badPointThan5SavePath = "/yst/seven/data/orderData/badPointThan5/"
     goodNetThan250(sc, badPointThan5Path, data, badPointThan5SavePath)
-    val badNetThan10Path = "/Users/seven/data/orderData/badNetThan10.csv"
-    val badNetThan10SavePath = "/Users/seven/data/orderData/badNetThan10/"
+    val badNetThan10Path = "/yst/seven/data/orderData/badNetThan10.csv"
+    val badNetThan10SavePath = "/yst/seven/data/orderData/badNetThan10/"
     goodNetThan250(sc, badNetThan10Path, data, badNetThan10SavePath)
-    val badPointNullPath = "/Users/seven/data/orderData/badPointNull.csv"
-    val badPointNullSavePath = "/Users/seven/data/orderData/badPointNull/"
+    val badPointNullPath = "/yst/seven/data/orderData/badPointNull.csv"
+    val badPointNullSavePath = "/yst/seven/data/orderData/badPointNull/"
     goodNetThan250(sc, badPointNullPath, data, badPointNullSavePath)
-    val variationPath = "/Users/seven/data/orderData/variation.csv"
-    val variationSavePath = "/Users/seven/data/orderData/variation/"
+    val variationPath = "/yst/seven/data/orderData/variation.csv"
+    val variationSavePath = "/yst/seven/data/orderData/variation/"
     goodNetThan250(sc, variationPath, data, variationSavePath)
 
     //    goodNetThan250(sc,goodNetThan250Path,data)
@@ -127,7 +127,7 @@ object Clustering {
 
     //data.foreach(x => (println(x._1+":"+x._2)))
 
-    //data.map(x => x._2).repartition(1).saveAsTextFile("/Users/seven/data/clustering/")
+    //data.map(x => x._2).repartition(1).saveAsTextFile("/yst/seven/data/clustering/")
 
 
     stopWatch.stop()
@@ -1073,7 +1073,7 @@ object Clustering {
       val netId = line(2)
       map.containsKey(netId)
     }).cache()
-    data.repartition(1).saveAsTextFile("/Users/seven/data/orderData/bad/")
+    data.repartition(1).saveAsTextFile("/yst/seven/data/orderData/bad/")
   }
 
   /**
@@ -1100,6 +1100,6 @@ object Clustering {
       val netId = line(2)
       map.containsKey(netId)
     }).cache()
-    data.repartition(1).saveAsTextFile("/Users/seven/data/orderData/variation/")
+    data.repartition(1).saveAsTextFile("/yst/seven/data/orderData/variation/")
   }
 }
