@@ -379,6 +379,89 @@ public class HBaseOps {
         }
     }
 
+
+    /**
+     * 获取多行
+     *
+     * @param tableName 表名
+     * @param rowKeys    行键
+     * @throws Exception
+     */
+    public static List<byte[]> getRows(String tableName, List<String> rowKeys)
+            throws Exception {
+        return getRows(tableName, rowKeys, null);
+    }
+
+    /**
+     * 获取多行
+     *
+     * @param tableName 表名
+     * @param rowKeys    行键
+     * @param family    列簇
+     * @throws Exception
+     */
+    public static List<byte[]> getRows(String tableName, List<String> rowKeys, String family)
+            throws Exception {
+        return getRows(tableName, rowKeys, family, null);
+    }
+
+    /**
+     * 获取多行
+     *
+     * @param tableName 表名
+     * @param rowKeys    行键
+     * @param family    列簇
+     * @param qualifier 标识
+     * @throws Exception
+     */
+    public static List<byte[]> getRows(String tableName, List<String> rowKeys, String family, String qualifier)
+            throws Exception {
+        long start = System.currentTimeMillis();
+        HTable table = null;
+        Connection conn = null;
+        try {
+            conn = HBasePool.getInstance().borrowObject();
+            table = (HTable) conn.getTable(TableName.valueOf(tableName));
+            List<Get> gets = new ArrayList<Get>();
+            for(String rowKey : rowKeys){
+                Get get = new Get(Bytes.toBytes(rowKey));
+                if (!StringUtils.isEmpty(family) && StringUtils.isEmpty(qualifier)) {
+                    get.addFamily(Bytes.toBytes(family));
+                }
+                if (!StringUtils.isEmpty(family) && !StringUtils.isEmpty(qualifier)) {
+                    get.addColumn(Bytes.toBytes(family), Bytes.toBytes(qualifier));
+                }
+                gets.add(get);
+            }
+            Result[] results = table.get(gets);
+            if (results.length == 0) {
+                LOG.warn("result is empty");
+            } else {
+                if (LOG.isDebugEnabled()) {
+                    showCell(results[0]); // 显示cell信息
+                }
+            }
+            List<byte[]> list = new ArrayList<byte[]>();
+            for(Result result : results){
+                byte[] data = new byte[0];
+                for (Cell cell : result.rawCells()) {
+                    data = CellUtil.cloneValue(cell);
+                }
+                list.add(data);
+            }
+
+            LOG.debug("get took {} ms", System.currentTimeMillis() - start);
+            return list;
+        } finally {
+            closeTable(table);
+            HBasePool.getInstance().returnObject(conn);
+        }
+    }
+
+
+
+
+
     /**
      * 判断结果是否为空
      *
@@ -535,8 +618,16 @@ public class HBaseOps {
 
     public static void main(String[] args) {
         try {
-            createTable("seven",new String[]{"family","qualifier"});
+//            createTable("seven",new String[]{"family","qualifier"});
 //            deleteTable("orderDataTest");
+            List<String> stringList = new ArrayList<String>();
+            stringList.add("aaa5406793327251");
+            stringList.add("aaa1396793327251");
+            stringList.add("aaa3495793327251");
+            List<byte []> list = getRows("seven",stringList,"family","qualifier");
+            for(byte[] b : list){
+                System.out.println(new String(b));
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
