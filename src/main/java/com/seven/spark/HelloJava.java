@@ -1,6 +1,9 @@
 package com.seven.spark;
 
 
+import com.seven.spark.hbase.rowkey.RowKeyGenerator;
+import com.seven.spark.hbase.rowkey.generator.HashRowKeyGenerator;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -58,5 +61,11 @@ public class HelloJava {
 //        for(long l : ls){
 //            System.out.println(l);
 //        }
+
+
+        RowKeyGenerator rowKeyGenerator = new HashRowKeyGenerator();
+        byte[] bytes = rowKeyGenerator.generate("");
+        System.out.println(bytes.toString());
+        System.out.println(new String(bytes));
     }
 }

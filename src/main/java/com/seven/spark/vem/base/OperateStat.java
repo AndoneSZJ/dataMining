@@ -795,7 +795,7 @@ public class OperateStat {
 //			}
 //		});
 
-//		pointOperateStat.repartition(1).saveAsTextFile("/Users/seven/data/pointOperateStat/");
+//		pointOperateStat.repartition(1).saveAsTextFile("/yst/seven/data/pointOperateStat/");
 //
 		String basePath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/operate/";
 //		String basePath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/seven/operate/";

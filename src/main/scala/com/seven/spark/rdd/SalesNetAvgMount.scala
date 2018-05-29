@@ -54,6 +54,8 @@ object SalesNetAvgMount {
     val orderPath = "/yst/vem/sales/order/*"
     getOrderDataNet(orderPath, operateBv, basicNetBv,basicPointBv)
     //getOrderDataNetByPointThan30(orderPath, operateBv, basicNetBv)
+    val netPath = "/yst/seven/data/netData/*"
+    getOrderNullDataNet(orderPath,netPath,operateBv, basicNetBv)
     stopWatch.stop()
 
     log.info("job is success spend time is " + stopWatch.toString)
@@ -78,7 +80,7 @@ object SalesNetAvgMount {
         val pointNum = line(10)
         //机器数
         val machineNum = line(4)
-        hashMap.put(netId, time + "@" + pointNum + "," + machineNum)
+        hashMap.put(netId, time + "," + pointNum + "," + machineNum)
       })
       hashMap.iterator
     })
@@ -87,7 +89,7 @@ object SalesNetAvgMount {
 
     val operateMap = new util.HashMap[String, String]
     for (o <- operate) {
-      operateMap.put(o._1, o._2.split("@")(1))
+      operateMap.put(o._1, o._2)
     }
     operateMap
   }
@@ -140,6 +142,12 @@ object SalesNetAvgMount {
           val net = basicNetMap.get(netId)
           var netBasic = ""
 
+          var day = 7.0
+          if(operate != null){
+            if(operate.split(",")(0).toDouble <= 7){
+              day = operate.split(",")(0).toDouble
+            }
+          }
 
 
           if (net == null) {
@@ -194,7 +202,7 @@ object SalesNetAvgMount {
           var groundThan60 = 0
           var groundThan100 = 0
           for(m <- groundMap){
-            val moneyAvg = m._2 / 7 / 100
+            val moneyAvg = m._2 / day / 100
             if(moneyAvg >= 30){
               groundThan30 += 1
             }
@@ -213,7 +221,7 @@ object SalesNetAvgMount {
           var undergroundThan60 = 0
           var undergroundThan100 = 0
           for(m <- undergroundMap){
-            val moneyAvg = m._2 / 7 / 100
+            val moneyAvg = m._2 / day / 100
             if(moneyAvg >= 30){
               undergroundThan30 += 1
             }
@@ -232,7 +240,7 @@ object SalesNetAvgMount {
           var numThan60 = 0
           var numThan100 = 0
           for(m <- map){
-            val moneyAvg = m._2 / 7 / 100
+            val moneyAvg = m._2 / day / 100
             if(moneyAvg >= 30){
               numThan30 += 1
             }
@@ -249,7 +257,7 @@ object SalesNetAvgMount {
 
 
 
-          avgMoney = avgMoney / 7 / 100
+          avgMoney = avgMoney / day / 100
 
           val money = avgMoney.formatted("%.2f")
 
@@ -364,6 +372,84 @@ object SalesNetAvgMount {
       }).cache()
     Utils.saveHdfs(order,sc,"/yst/seven/data/orderData/getOrderDataNetByPointThan30/")
 //    order.repartition(1).saveAsTextFile("/yst/seven/data/orderData/getOrderDataNetByPointThan30/")
+  }
+
+
+  /**
+    * 获取7天内的销售数据
+    *
+    * @param path
+    */
+  def getOrderNullDataNet(path: String,netPath:String, operateBv: Broadcast[util.HashMap[String, String]],
+                      basicNetBv: Broadcast[util.HashMap[String, String]]): Unit = {
+    val df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+    val date = new Date()
+    val long = 1000 * 3600 * 24 * 7L
+    val order = sc.textFile(path).filter(x => {
+      //选取7天内的销售数据
+      val line = x.split(",")
+      val time = line(0)
+      val money = line(4)
+      //销售金额
+      val map = operateBv.value
+      map.containsKey(line(8)) && money.toDouble < 15000 && !"100.0".equals(money) && df.parse(time).getTime > date.getTime - long //过滤7天以外的数据，过滤运营天数不足的网点，过滤活动订单，大额订单
+    }).mapPartitions(x => {
+      var list = List[(String, Int)]()
+      x.foreach(row => {
+        val line = row.split(",")
+        //网点id
+        val netId = line(8)
+        list.::=(netId, 1)
+      })
+      list.iterator
+    }).reduceByKey(_+_).collect()
+
+    val hashMap = new java.util.HashMap[String,Int]()
+    for(o <- order){
+      hashMap.put(o._1,o._2)
+    }
+
+    val netData = sc.textFile(netPath).filter(x =>{
+      !hashMap.containsKey(x) && !"id".equals(x.toString.split(",")(0))
+    }).mapPartitions(x => {
+        //增加运营天数
+        var list = List[String]()
+        x.foreach(row => {
+          val line = row.split(",")
+          val netId = line(0)
+          val operateMap = operateBv.value
+          val basicNetMap = basicNetBv.value
+          val operate = operateMap.get(netId)
+
+          val net = basicNetMap.get(netId)
+          var netBasic = ""
+
+          val city = line(6)+"_"+line(7)
+
+          if (net == null) {
+            netBasic = ",,,,," + operate
+          } else {
+            val basic = net.split(",")
+            val netName = basic(1)
+            //网点名称
+            val householdTotalNum = basic(25)
+            //小区户数
+            val householdCheckInNum = basic(16)
+            //入住户数
+            val propertyCosts = basic(22)
+            //物业费
+            val time = (date.getTime - df.parse(basic(21)).getTime) / (1000 * 60 * 60 * 24L) / 365 //小区运行多少年
+            netBasic = netName + "," + householdTotalNum + "," + householdCheckInNum + "," + time + "," + propertyCosts + "," + operate
+          }
+//          var avgMoney: Double = 0.0
+
+          list.::=(netId+","+city + "," + 0 + "," + netBasic)
+        })
+        list.iterator
+      })
+      .cache()
+    //    order.repartition(1).saveAsTextFile("/yst/seven/data/orderData/SalesNetAvgMount/")
+    Utils.saveHdfs(netData,sc,"/yst/seven/data/orderData/getOrderNullDataNet/")
   }
 
 

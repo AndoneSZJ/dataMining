@@ -21,7 +21,7 @@ object SparkSessionTest {
     .getOrCreate() //创建
 
   def main(args: Array[String]): Unit = {
-    val path = "h/yst/vem/sales/order/*"
+    val path = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/order/*"
 
     val ss = spark.read.option("delimiter", ",").csv(path)
 

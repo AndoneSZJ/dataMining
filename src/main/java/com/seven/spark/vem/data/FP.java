@@ -22,7 +22,7 @@ public class FP {
 		}
 		JavaSparkContext sc = new JavaSparkContext(sparkConf);
 		Logger.getRootLogger().setLevel(Level.OFF);
-		JavaRDD<String> data = sc.textFile("/Users/seven/data/user/day/*");
+		JavaRDD<String> data = sc.textFile("/yst/seven/data/user/day/*");
 
 		JavaRDD<List<String>> transactions = data.map(line -> Arrays.asList(line.split(",")));
 

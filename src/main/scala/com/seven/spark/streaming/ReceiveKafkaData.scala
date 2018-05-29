@@ -1,5 +1,9 @@
 package com.seven.spark.streaming
 
+import java.text.SimpleDateFormat
+
+import com.seven.spark.Entity.Order
+import com.seven.spark.elastic.ElasticOps
 import com.seven.spark.hbase.HBaseOps
 import com.seven.spark.hbase.rowkey.RowKeyGenerator
 import com.seven.spark.hbase.rowkey.generator.HashRowKeyGenerator
@@ -71,13 +75,30 @@ object ReceiveKafkaData {
       if (!rdd.isEmpty()) {
         rdd.foreachPartition(x => {
           var puts = List[Put]()
+          var orders = List[Order]()
           x.foreach(row => {
-            val put = new Put(rowKeyGen.generate("")) //获取rowkey
+            val format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+
+            val line = row.split(",")
+            val rowKey = rowKeyGen.generate("")//获取rowkey
+
+            val order = new Order()
+            order.setId(line(0))
+            order.setNetId(line(9))
+            order.setPointId(line(10))
+            order.setUserId(line(6))
+            order.setPlayTime(format.parse(line(1)).getTime)
+            order.setRowKey(new String(rowKey))
+
+            val put = new Put(rowKey)
             put.addColumn(Bytes.toBytes(family), Bytes.toBytes(qualifier), Bytes.toBytes(row)) //插入一条数据
             puts.::=(put)
+            orders.::=(order)
           })
-          HBaseOps.put("seven", puts) //工具类，批量插入数据
-          log.info(s"Inserting ${puts.size} lines of data to hbase is success . . .")
+          HBaseOps.put("seven", puts) //HBase工具类，批量插入数据
+          log.info(s"Inserting ${puts.size} lines of data to HBase is success . . .")
+          ElasticOps.puts("data","order",orders)//ES工具类，批量插入数据
+          log.info(s"Inserting ${orders.size} lines of data to ElasticSearch is success . . .")
         })
       }
     })

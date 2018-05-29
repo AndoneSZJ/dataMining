@@ -44,11 +44,11 @@ object SimulationKafkaSendOutData {
     props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
     val producer = new KafkaProducer[String, String](props)
     println(map.size())
-    for (m <- 1 to map.size()) {
+    for (m <- 1 to 100) {
       val message = map.get(m)
       producer.send(new ProducerRecord[String, String]("seven", m.toString, message))
       println(message)
-      //      Thread.sleep(100)
+      Thread.sleep(1000)
     }
     producer.close()
   }
