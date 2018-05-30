@@ -1,4 +1,4 @@
-package com.seven.spark.hbase;
+package com.seven.spark;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HConstants;
