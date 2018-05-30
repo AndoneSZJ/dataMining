@@ -61,7 +61,8 @@ public class ElasticOps {
 //            }
             //ElasticOps.createIndex("data");
 
-            SearchHits searchHits = search("data","order",0);
+//            deleteIndex("data");
+            SearchHits searchHits = search("seven","order",0);
             for(SearchHit searchHit : searchHits){
 //                System.out.println(searchHit.getSource().get("id"));
 //                System.out.println(searchHit.getSource().get("userId"));
@@ -410,7 +411,7 @@ public class ElasticOps {
      * @param indexName 索引名称
      * @return 索引存在且删除成功返回true, 否则返回false
      */
-    public boolean deleteIndex(String indexName) throws Exception {
+    public static boolean deleteIndex(String indexName) throws Exception {
         TransportClient client = null;
         try {
             client = ElasticPool.getInstance().borrowObject();
@@ -425,6 +426,31 @@ public class ElasticOps {
                 LOG.warn("Index [{}] not exist", indexName);
                 return false;
             }
+        } finally {
+            if (null != client) {
+                ElasticPool.getInstance().returnObject(client);
+            }
+        }
+    }
+
+
+
+    /**
+     * 通过JavaBean的方式插入数据
+     * @param indexName 索引名称
+     * @param indexType 索引类型
+     * @param t         泛型实体类
+     * @throws Exception
+     */
+    public static <T extends Other> void put(String indexName, String indexType,T t) throws Exception {
+        TransportClient client = null;
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            client = ElasticPool.getInstance().borrowObject();
+//            IndexResponse indexResponse =
+            client.prepareIndex(indexName,indexType,t.getId())
+                    .setSource(mapper.writeValueAsString(t)).execute().actionGet();
+//            return indexResponse.forcedRefresh();
         } finally {
             if (null != client) {
                 ElasticPool.getInstance().returnObject(client);
@@ -459,29 +485,6 @@ public class ElasticOps {
             if(bulkRequest.numberOfActions() > 0){
                 bulkRequest.execute().actionGet();
             }
-        } finally {
-            if (null != client) {
-                ElasticPool.getInstance().returnObject(client);
-            }
-        }
-    }
-
-    /**
-     * 通过JavaBean的方式插入数据
-     * @param indexName 索引名称
-     * @param indexType 索引类型
-     * @param t         泛型实体类
-     * @throws Exception
-     */
-    public static <T extends Other> void put(String indexName, String indexType,T t) throws Exception {
-        TransportClient client = null;
-        try {
-            ObjectMapper mapper = new ObjectMapper();
-            client = ElasticPool.getInstance().borrowObject();
-//            IndexResponse indexResponse =
-            client.prepareIndex(indexName,indexType,t.getId())
-                    .setSource(mapper.writeValueAsString(t)).execute().actionGet();
-//            return indexResponse.forcedRefresh();
         } finally {
             if (null != client) {
                 ElasticPool.getInstance().returnObject(client);

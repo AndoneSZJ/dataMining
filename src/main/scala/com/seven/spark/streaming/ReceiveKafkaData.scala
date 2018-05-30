@@ -97,7 +97,7 @@ object ReceiveKafkaData {
           })
           HBaseOps.put("seven", puts) //HBase工具类，批量插入数据
           log.info(s"Inserting ${puts.size} lines of data to HBase is success . . .")
-          ElasticOps.puts("data","order",orders)//ES工具类，批量插入数据
+          ElasticOps.puts("seven","order",orders)//ES工具类，批量插入数据
           log.info(s"Inserting ${orders.size} lines of data to ElasticSearch is success . . .")
         })
       }

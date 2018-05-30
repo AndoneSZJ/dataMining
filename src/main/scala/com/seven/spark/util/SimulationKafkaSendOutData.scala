@@ -48,7 +48,7 @@ object SimulationKafkaSendOutData {
       val message = map.get(m)
       producer.send(new ProducerRecord[String, String]("seven", m.toString, message))
       println(message)
-      Thread.sleep(1000)
+      Thread.sleep(100)
     }
     producer.close()
   }
