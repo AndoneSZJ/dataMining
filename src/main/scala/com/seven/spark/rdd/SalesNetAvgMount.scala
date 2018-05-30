@@ -410,7 +410,8 @@ object SalesNetAvgMount {
     }
 
     val netData = sc.textFile(netPath).filter(x =>{
-      !hashMap.containsKey(x) && !"id".equals(x.toString.split(",")(0))
+      val line = x.split(",")
+      !hashMap.containsKey(line(0)) && !"id".equals(line(0))
     }).mapPartitions(x => {
         //增加运营天数
         var list = List[String]()
