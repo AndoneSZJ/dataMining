@@ -14,7 +14,6 @@ import org.apache.spark.SparkConf
 import org.apache.spark.streaming.kafka010._
 import org.apache.spark.streaming.kafka010.LocationStrategies.PreferConsistent
 import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
-//import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.slf4j.LoggerFactory
 
@@ -80,7 +79,7 @@ object ReceiveKafkaData {
             val format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
 
             val line = row.split(",")
-            val rowKey = rowKeyGen.generate("")//获取rowkey
+            val rowKey = rowKeyGen.generate("") //获取rowkey
 
             val order = new Order()
             order.setId(line(0))
@@ -97,7 +96,7 @@ object ReceiveKafkaData {
           })
           HBaseOps.put("seven", puts) //HBase工具类，批量插入数据
           log.info(s"Inserting ${puts.size} lines of data to HBase is success . . .")
-          ElasticOps.puts("seven","order",orders)//ES工具类，批量插入数据
+          ElasticOps.puts("seven", "order", orders) //ES工具类，批量插入数据
           log.info(s"Inserting ${orders.size} lines of data to ElasticSearch is success . . .")
         })
       }
