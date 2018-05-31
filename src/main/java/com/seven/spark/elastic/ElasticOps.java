@@ -2,7 +2,7 @@ package com.seven.spark.elastic;
 
 import com.amazonaws.util.json.JSONObject;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.seven.spark.Entity.Other;
+import com.seven.spark.entity.Other;
 import com.seven.spark.elastic.pool.ElasticPool;
 import org.apache.commons.lang.StringUtils;
 import org.elasticsearch.action.admin.indices.alias.IndicesAliasesResponse;

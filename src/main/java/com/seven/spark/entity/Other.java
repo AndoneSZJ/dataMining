@@ -1,4 +1,4 @@
-package com.seven.spark.Entity;
+package com.seven.spark.entity;
 
 /**
  * Created by IntelliJ IDEA.
