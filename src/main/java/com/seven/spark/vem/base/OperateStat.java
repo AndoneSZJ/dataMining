@@ -1,6 +1,6 @@
 package com.seven.spark.vem.base;
 
-import com.seven.spark.utils.Utils;
+import com.seven.spark.hdfs.Utils;
 import org.apache.commons.collections.map.HashedMap;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -11,7 +11,6 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFunction;
-import org.apache.spark.api.java.function.VoidFunction;
 import org.apache.spark.broadcast.Broadcast;
 import scala.Tuple2;
 
@@ -31,7 +30,7 @@ public class OperateStat {
 //		} else {
 //			endString = args[0];
 //		}
-		endString = "2018-05-22 00:00:00.0";
+		endString = "2018-05-31 00:00:00.0";
 		System.out.println(endString);
 		JavaSparkContext sc = new JavaSparkContext(sparkConf);
 		SimpleDateFormat format2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -70,14 +69,22 @@ public class OperateStat {
 		final Broadcast<Map<String, Long>> bv0 = sc.broadcast(macMap0);
 
 		//根据网点编号获取城市
-		String netPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/info/net/*";
-		List<Tuple2<String, String>> netData = sc.textFile(netPath).mapToPair(
+		String netPath = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/sta_vem/vem_nettype/*";//"hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/info/net/*";
+		List<Tuple2<String, String>> netData = sc.textFile(netPath)
+				.filter(new Function<String, Boolean>() {
+
+			@Override
+			public Boolean call(String s) throws Exception {
+				String[] ss = s.split(",");
+				return "net".equals(ss[8]);
+			}
+		}).mapToPair(
 				new PairFunction<String, String, String>() {
 			@Override
 			public Tuple2<String, String> call(String s) throws Exception {
 				String[] ss = s.split(",");
 				String mst = ss[0];//网点编号
-				String city = ss[6];//城市信息
+				String city = ss[11]+"_"+ss[12];//城市信息
 				return new Tuple2<String, String>(mst, city);
 			}
 		}).collect();

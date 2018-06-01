@@ -243,7 +243,7 @@ public class HBaseOps {
      * @param puts      put列表
      * @throws Exception
      */
-    public static void put(
+    public static void puts(
             String tableName,
             List<Put> puts
     ) throws Exception {

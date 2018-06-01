@@ -5,7 +5,7 @@ import java.util
 import java.util.Date
 
 import com.seven.spark.sparksql.NetTypeUtils
-import com.seven.spark.utils.Utils
+import com.seven.spark.hdfs.Utils
 import org.apache.commons.lang.time.StopWatch
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.{SparkConf, SparkContext}

@@ -6,8 +6,11 @@
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/base/OperateStat.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/base/GetAllRlbData2018.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.java
+/Users/seven/project/github/dataMining/src/main/java/com/seven/spark/elastic/pool/PooledElasticFactory.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/base/PointBaseInfo.java
+/Users/seven/project/github/dataMining/src/main/java/com/seven/spark/common/PropertiesUtils.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/HelloJava.java
+/Users/seven/project/github/dataMining/src/main/java/com/seven/spark/entity/Other.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/hbase/HBaseUtils.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/data/ProcessNode2018.java
@@ -17,9 +20,14 @@
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/common/Utils.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/hbase/HBaseOps.java
+/Users/seven/project/github/dataMining/src/main/java/com/seven/spark/entity/FileType.java
+/Users/seven/project/github/dataMining/src/main/java/com/seven/spark/elastic/ElasticOps.java
+/Users/seven/project/github/dataMining/src/main/java/com/seven/spark/entity/Order.java
+/Users/seven/project/github/dataMining/src/main/java/com/seven/spark/elastic/ElasticOperation.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/hbase/pool/PooledHBaseFactory.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/base/Stat.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/utils/Utils.java
+/Users/seven/project/github/dataMining/src/main/java/com/seven/spark/elastic/pool/ElasticPool.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/base/Records.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/base/NetBaseInfo.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/data/GetAllRlbData2018.java

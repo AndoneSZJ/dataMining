@@ -1,4 +1,4 @@
-package com.seven.spark.utils;
+package com.seven.spark.hdfs;
 
 
 import java.net.URI;

@@ -1,6 +1,6 @@
 package com.seven.spark.vem.user;
 
-import com.seven.spark.utils.Utils;
+import com.seven.spark.hdfs.Utils;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.spark.SparkConf;

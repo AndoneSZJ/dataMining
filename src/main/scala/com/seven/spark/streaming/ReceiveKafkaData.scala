@@ -2,7 +2,7 @@ package com.seven.spark.streaming
 
 import java.text.SimpleDateFormat
 
-import com.seven.spark.Entity.Order
+import com.seven.spark.entity.Order
 import com.seven.spark.elastic.ElasticOps
 import com.seven.spark.hbase.HBaseOps
 import com.seven.spark.hbase.rowkey.RowKeyGenerator
@@ -94,7 +94,7 @@ object ReceiveKafkaData {
             puts.::=(put)
             orders.::=(order)
           })
-          HBaseOps.put("seven", puts) //HBase工具类，批量插入数据
+          HBaseOps.puts("seven", puts) //HBase工具类，批量插入数据
           log.info(s"Inserting ${puts.size} lines of data to HBase is success . . .")
           ElasticOps.puts("seven", "order", orders) //ES工具类，批量插入数据
           log.info(s"Inserting ${orders.size} lines of data to ElasticSearch is success . . .")

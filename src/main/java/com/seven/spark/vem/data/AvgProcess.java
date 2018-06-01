@@ -1,6 +1,6 @@
 package com.seven.spark.vem.data;
 
-import com.seven.spark.utils.Utils;
+import com.seven.spark.hdfs.Utils;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;

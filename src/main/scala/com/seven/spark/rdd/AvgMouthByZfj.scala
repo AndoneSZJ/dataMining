@@ -2,7 +2,7 @@ package com.seven.spark.rdd
 
 import java.util
 
-import com.seven.spark.utils.Utils
+import com.seven.spark.hdfs.Utils
 import org.apache.commons.lang.time.StopWatch
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
