@@ -16,9 +16,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * HBase常用操作
+ * Created by IntelliJ IDEA.
+ *         __   __
+ *         \/---\/
+ *          ). .(
+ *         ( (") )
+ *          )   (
+ *         /     \
+ *        (       )``
+ *       ( \ /-\ / )
+ *        w'W   W'w
  *
- * @author seven
+ * author   seven
+ * email    sevenstone@yeah.net
+ * date     2018/5/10 下午4:37
+ *
+ * HBase常用操作
  */
 public class HBaseOps {
     private static final Logger LOG = LoggerFactory.getLogger(HBaseOps.class);

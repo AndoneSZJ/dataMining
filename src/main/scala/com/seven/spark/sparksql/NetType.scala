@@ -6,8 +6,20 @@ import org.apache.spark.sql.{SaveMode, SparkSession}
 import org.slf4j.LoggerFactory
 
 /**
-  * author seven
-  * time   2018-05-02
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/5/2 下午4:37
   * 生成网点关系与点位关系
   */
 object NetType {

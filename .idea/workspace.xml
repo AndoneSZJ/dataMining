@@ -5,17 +5,62 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOperation.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/FileType.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesDefectNetByNetCommunity.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/spark.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/spark.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/common/CommonConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/common/CommonConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/common/PropertiesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/common/PropertiesUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/common/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/common/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/ElasticPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/ElasticPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/PooledElasticFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/PooledElasticFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Other.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Other.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/HBasePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/HBasePool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/PooledHBaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/PooledHBaseFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/RowKeyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/RowKeyGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/MD5RowKeyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/MD5RowKeyGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/NetBaseInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/NetBaseInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateStat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/Stat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/HBaseOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/HBaseOps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNetAvgMount$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNetAvgMount$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2$$anonfun$apply$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2$$anonfun$apply$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/Hello.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/Hello.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/HelloScala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/HelloScala.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/dw_zfj_rlb" beforeDir="false" afterPath="$PROJECT_DIR$/dataType/dw_zfj_rlb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/jdbc/ConnectionPool.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/jdbc/ConnectionPool.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/KafkaSink.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/KafkaSink.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/MonthlyAverageSalesByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/MonthlyAverageSalesByZfj.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PointNumberOfPeople.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PointNumberOfPeople.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesDefectNetByNetCommunity.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesDefectNetByNetCommunity.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodNet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodNet.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodPoint.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodPoint.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesTimeInterval.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesTimeInterval.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesUserPurchaseOfGoods.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesUserPurchaseOfGoods.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesVolume.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesVolume.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/TestMap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/TestMap.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetTypeUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetTypeUtils.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/SalesLatAndLng.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/SalesLatAndLng.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/StreamingKafka.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/StreamingKafka.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/TopThreeHotProduct.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/TopThreeHotProduct.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCountSocket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCountSocket.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/ReadHdfsFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/ReadHdfsFile.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/utils/Utils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/GetAllRlbData2018.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/GetAllRlbData2018.class" afterDir="false" />
@@ -44,10 +89,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/ProcessNode2018.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/ProcessNode2018.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/user/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/user/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/dataMining-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/dataMining-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,84 +120,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FindAbnormal2018.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FP.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetAllRlbData2018.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/GetAllRlbData2018.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BaseOrder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/BaseOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2160">
-              <caret line="159" selection-start-line="159" selection-end-line="159" />
+            <state relative-caret-position="60">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SalesDefectNetByNetCommunity.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesDefectNetByNetCommunity.scala">
+      <file leaf-file-name="Volume.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1830">
-              <caret line="128" column="14" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="14" />
-              <folding>
-                <element signature="e#29#45#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NetBaseInfo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/NetBaseInfo.java">
+      <file leaf-file-name="GetHZRlbData2018.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/GetHZRlbData2018.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-              <folding>
-                <element signature="e#651#678#0" expanded="true" />
-                <element signature="e#3992#4008#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HBaseUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseUtils.java">
+      <file leaf-file-name="Process.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OperateStat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateStat.java">
+      <file leaf-file-name="ProcessNode2018.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/ProcessNode2018.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="100" column="82" selection-start-line="100" selection-start-column="56" selection-end-line="100" selection-end-column="82" />
+            <state relative-caret-position="60">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/Stat.java">
+      <file leaf-file-name="PointBaseInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/PointBaseInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="398" column="36" selection-start-line="398" selection-start-column="36" selection-end-line="398" selection-end-column="36" />
+            <state relative-caret-position="60">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Clustering.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala">
+      <file leaf-file-name="GetAllRlbData2018.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/GetAllRlbData2018.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SalesChannelInAreaSortByZfj.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="90">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -206,57 +255,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/SalesLatAndLng.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/Hello.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/HelloScala.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/ReadHdfsFile.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/StreamingKafka.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/TopThreeHotProduct.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCountSocket.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/ReadHdfsFile.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/HelloScala.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/ReadHBase.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesVolume.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesUserPurchaseOfGoods.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesTimeInterval.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodPoint.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodNet.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PointNumberOfPeople.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/MonthlyAverageSalesByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/ElasticPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticQueryBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/Oooo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/PooledElasticFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/Entity/FileType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/Entity/All.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/Entity/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/Entity/Other.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/HelloJava.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/common/PropertiesUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/HBaseUtils.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetTypeUtils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/SalesLatAndLng.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/NetBaseInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateStat.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/MonthlyAverageSalesByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PointNumberOfPeople.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesDefectNetByNetCommunity.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/Stat.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOperation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodNet.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodPoint.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesTimeInterval.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesUserPurchaseOfGoods.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesVolume.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/TestMap.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/KafkaSink.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/jdbc/ConnectionPool.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/ElasticPool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/PooledElasticFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/common/CommonConst.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/common/PropertiesUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/common/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Other.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/HBasePool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/PooledHBaseFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/RowKeyGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/MD5RowKeyGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" />
       </list>
     </option>
   </component>
@@ -346,6 +395,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
               <item name="elastic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -365,7 +423,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
               <item name="hbase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="hbase" type="462c0819:PsiDirectoryNode" />
+              <item name="pool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
@@ -384,17 +461,9 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="vem" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="vem" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="hbase" type="462c0819:PsiDirectoryNode" />
+              <item name="rowkey" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
@@ -410,6 +479,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="spark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
@@ -449,6 +536,15 @@
             </path>
             <path>
               <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -469,15 +565,15 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dataType" />
       <recent name="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data" />
       <recent name="$PROJECT_DIR$/src/main/java/com/seven/spark" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/seven/spark/java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.seven.spark" />
@@ -658,7 +754,7 @@
       <workItem from="1528176453554" duration="2585000" />
       <workItem from="1528181537388" duration="1707000" />
       <workItem from="1528246369828" duration="7018000" />
-      <workItem from="1528333012989" duration="1668000" />
+      <workItem from="1528333012989" duration="4928000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1527214314628</created>
@@ -821,11 +917,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528337006999</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="计算数据缺失率">
+      <created>1528338156373</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1528338156373</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441410000" />
+    <option name="totallyTimeSpent" value="444670000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -850,10 +953,10 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4048485" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.16242424" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3078788" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2832618" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2832618" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="6" weight="0.3297568" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32768363" />
@@ -927,56 +1030,57 @@
     <MESSAGE value="添加读取配置" />
     <MESSAGE value="修改实体类" />
     <MESSAGE value="修改数据源" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改数据源" />
+    <MESSAGE value="计算数据缺失率" />
+    <option name="LAST_COMMIT_MESSAGE" value="计算数据缺失率" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala</url>
-          <line>50</line>
+          <line>61</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala</url>
-          <line>42</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala</url>
-          <line>46</line>
+          <line>57</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala</url>
-          <line>53</line>
+          <line>64</line>
           <properties />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/util/ReadHdfsFile.scala</url>
-          <line>19</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala</url>
-          <line>373</line>
+          <line>384</line>
           <properties />
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala</url>
-          <line>57</line>
+          <line>69</line>
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesDefectNetByNetCommunity.scala</url>
-          <line>103</line>
+          <line>113</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -984,13 +1088,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesDefectNetByNetCommunity.scala</url>
-          <line>41</line>
+          <line>51</line>
           <properties />
           <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesDefectNetByNetCommunity.scala</url>
-          <line>93</line>
+          <line>103</line>
           <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
@@ -1038,55 +1142,55 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java</url>
-          <line>106</line>
+          <line>116</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.java</url>
-          <line>18</line>
+          <line>31</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.java</url>
-          <line>26</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java</url>
-          <line>448</line>
+          <line>458</line>
           <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java</url>
-          <line>53</line>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java</url>
-          <line>447</line>
+          <line>457</line>
           <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java</url>
-          <line>337</line>
+          <line>347</line>
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java</url>
-          <line>340</line>
+          <line>350</line>
           <properties />
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java</url>
-          <line>65</line>
+          <line>75</line>
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
@@ -1162,6 +1266,323 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/SalesLatAndLng.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/MonthlyAverageSalesByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PointNumberOfPeople.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesDefectNetByNetCommunity.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="e#29#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodNet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodPoint.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesTimeInterval.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesUserPurchaseOfGoods.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesVolume.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/TestMap.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-781">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/KafkaSink.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/jdbc/ConnectionPool.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/HelloJava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8206">
+          <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/ElasticPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/PooledElasticFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/common/CommonConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/common/PropertiesUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/common/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Other.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/HBasePool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/PooledHBaseFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/RowKeyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/MD5RowKeyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hdfs/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/GetAllRlbData2018.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/GetHZRlbData2018.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1183,128 +1604,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FP.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/PointBaseInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/common/PropertiesUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/common/CommonConst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="48" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/common/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hdfs/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-647">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/HBasePool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Other.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/PooledElasticFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/ElasticPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="99" column="17" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/software/maven/repository/org/apache/spark/spark-sql_2.11/2.2.0/spark-sql_2.11-2.2.0.jar!/org/apache/spark/sql/Dataset.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="216" column="11" selection-start-line="216" selection-start-column="11" selection-end-line="216" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1315,226 +1618,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/user/UserInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/BaseOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/Records.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/PointBaseInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2018">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1796">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/MonthlyAverageSalesByZfj.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2343">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2162">
-          <caret line="185" column="14" selection-start-line="185" selection-start-column="14" selection-end-line="185" selection-end-column="14" />
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-434">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/TestMap.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesVolume.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1893">
-          <caret line="167" column="15" selection-start-line="167" selection-start-column="15" selection-end-line="167" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesUserPurchaseOfGoods.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesTimeInterval.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2505">
-          <caret line="173" column="31" selection-start-line="173" selection-start-column="31" selection-end-line="173" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodPoint.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodNet.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/BaseOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="159" selection-start-line="159" selection-end-line="159" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesDefectNetByNetCommunity.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="128" column="14" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="14" />
-          <folding>
-            <element signature="e#29#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/Stat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="398" column="36" selection-start-line="398" selection-start-column="36" selection-end-line="398" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateStat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="100" column="82" selection-start-line="100" selection-start-column="56" selection-end-line="100" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/ElasticOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="57" column="8" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/NetBaseInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="e#651#678#0" expanded="true" />
-            <element signature="e#3992#4008#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
         </state>
       </provider>
     </entry>

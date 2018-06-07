@@ -15,8 +15,21 @@ import scala.collection.mutable
 
 
 /**
-  * author seven
-  * time   2018-04-19
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/4/19 上午10:37
+  *
   * 台销（7日销量/机器数）,
   * 城市,网点,点位,
   * 机器数,坏机器数,产品数,

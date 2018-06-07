@@ -5,8 +5,21 @@ import java.util.concurrent.Future
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord, RecordMetadata}
 
 /**
-  * author seven
-  * time   2018-05-11
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/5/11 上午10:37
+  *
   * kafka包装类
   * https://www.cnblogs.com/xlturing/p/6246538.html
   */

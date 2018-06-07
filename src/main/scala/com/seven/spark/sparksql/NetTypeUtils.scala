@@ -6,8 +6,21 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 
 /**
-  * author seven
-  * time   2018-05-02
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/5/2 上午11:37
+  *
   * 处理点位和网点信息工具类
   */
 object NetTypeUtils {

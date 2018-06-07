@@ -9,9 +9,19 @@ import org.slf4j.LoggerFactory
 import scala.collection.mutable
 
 /**
-  * Created by IntelliJ IDEA.  
-  * author   seven  
-  * email    zjshi01@mail.nfsq.com.cn 
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
   * date     2018/6/6 下午2:59
   *
   * 计算net_community中缺失的网点

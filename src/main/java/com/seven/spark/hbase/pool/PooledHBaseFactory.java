@@ -11,7 +11,21 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author seven
+
+ * Created by IntelliJ IDEA.
+ *         __   __
+ *         \/---\/
+ *          ). .(
+ *         ( (") )
+ *          )   (
+ *         /     \
+ *        (       )``
+ *       ( \ /-\ / )
+ *        w'W   W'w
+ *
+ * author   seven
+ * email    sevenstone@yeah.net
+ * date     2018/5/11 上午9:37
  */
 public class PooledHBaseFactory extends BasePooledObjectFactory<Connection> {
     private static final Logger LOG = LoggerFactory.getLogger(PooledHBaseFactory.class);

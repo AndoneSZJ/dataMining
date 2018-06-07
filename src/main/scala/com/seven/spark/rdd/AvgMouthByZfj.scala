@@ -12,8 +12,18 @@ import org.apache.spark.broadcast.Broadcast
 import scala.collection.mutable
 
 /**
-  * Created by IntelliJ IDEA.  
-  * author   seven  
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
   * email    sevenstone@yeah.net
   * date     2018/5/22 上午10:09     
   */

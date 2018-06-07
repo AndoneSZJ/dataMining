@@ -7,7 +7,20 @@ import java.io.*;
 import java.text.DecimalFormat;
 
 /**
- * @author seven
+ * Created by IntelliJ IDEA.
+ *         __   __
+ *         \/---\/
+ *          ). .(
+ *         ( (") )
+ *          )   (
+ *         /     \
+ *        (       )``
+ *       ( \ /-\ / )
+ *        w'W   W'w
+ *
+ * author   seven
+ * email    sevenstone@yeah.net
+ * date     2018/5/16 上午10:37
  */
 public class Utils {
     private static final Logger LOG = LoggerFactory.getLogger(Utils.class);

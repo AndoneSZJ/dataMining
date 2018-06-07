@@ -11,8 +11,18 @@ import org.slf4j.LoggerFactory
 import scala.collection.mutable
 
 /**
-  * Created by IntelliJ IDEA.  
-  * author   seven  
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
   * email    sevenstone@yeah.net
   * date     2018/5/17 下午3:36
   * 按照渠道维度计算过去一年，每月台销情况

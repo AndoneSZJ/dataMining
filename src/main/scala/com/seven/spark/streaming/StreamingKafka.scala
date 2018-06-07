@@ -10,8 +10,21 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.slf4j.LoggerFactory
 
 /**
-  * author seven
-  * time   2018-05-11
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/5/11 上午10:44
+  *
   * SparkStreaming向kafka发送消息
   * 接收数据信息
   * seven iphone       mobilePhone

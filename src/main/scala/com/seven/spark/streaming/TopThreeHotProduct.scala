@@ -6,9 +6,22 @@ import org.apache.spark.sql.{Row, SQLContext}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 /**
-  * author seven
-  * time   2018-05-10
-  * sparkstreaming,sparksql
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/5/10 上午11:27
+  *
+  * SparkStreaming,SparkSql
   * 实时统计过去60秒内商品分类搜索前三的商品排名，5秒计算一次，10秒更新窗口时间
   * 日志格式 用户名 商品名 商品分类
   * leo iphone mobile_phone

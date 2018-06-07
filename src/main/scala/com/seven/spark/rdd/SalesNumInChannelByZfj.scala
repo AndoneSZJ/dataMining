@@ -3,10 +3,20 @@ package com.seven.spark.rdd
 import org.apache.spark.{SparkConf, SparkContext}
 
 /**
-  * Created by IntelliJ IDEA.  
-  * author   seven  
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
   * email    sevenstone@yeah.net
-  * date     2018/5/18 上午10:17     
+  * date     2018/5/18 上午10:17
   */
 object SalesNumInChannelByZfj {
   val conf = new SparkConf()

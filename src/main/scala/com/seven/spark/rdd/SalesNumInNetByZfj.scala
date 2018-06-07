@@ -4,10 +4,20 @@ import org.apache.spark.{SparkConf, SparkContext}
 
 
 /**
-  * Created by IntelliJ IDEA.  
-  * author   seven  
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
   * email    sevenstone@yeah.net
-  * date     2018/5/18 上午9:31     
+  * date     2018/5/18 上午9:31
   */
 object SalesNumInNetByZfj {
 

@@ -10,9 +10,22 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 import org.slf4j.LoggerFactory
 
-/** *
-  * author seven
-  * time   2018-04-19
+/**
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/4/19 上午11:37
+  *
   * 统计同一点位每七日新用户数，之前购买过视为老用户
   */
 object PointNumberOfPeople {

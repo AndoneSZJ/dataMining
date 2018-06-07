@@ -9,8 +9,20 @@ import org.slf4j.LoggerFactory
 import scala.collection.mutable
 
 /**
-  * author seven
-  * time   2018-05-14
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/5/14 下午2:37
   * 计算性别购买
   */
 object SalesSexByOrder {

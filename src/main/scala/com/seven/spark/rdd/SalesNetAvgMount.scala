@@ -14,10 +14,21 @@ import org.slf4j.LoggerFactory
 import scala.collection.mutable
 
 /**
-  * Created by IntelliJ IDEA.  
-  * author   seven  
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
   * email    sevenstone@yeah.net
   * date     2018/5/23 下午4:19
+  *
   * 运营天数 > 15天
   * 7日销售数据
   * 网点，日均网销（去除大额，活动），户数，入住户数，小区年限，物业费，点位数，机器数

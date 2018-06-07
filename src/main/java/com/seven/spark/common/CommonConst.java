@@ -1,7 +1,21 @@
 package com.seven.spark.common;
 
 /**
- * Created by seven
+
+ * Created by IntelliJ IDEA.
+ *         __   __
+ *         \/---\/
+ *          ). .(
+ *         ( (") )
+ *          )   (
+ *         /     \
+ *        (       )``
+ *       ( \ /-\ / )
+ *        w'W   W'w
+ *
+ * author   seven
+ * email    sevenstone@yeah.net
+ * date     2018/5/10 上午10:37
  */
 public class CommonConst {
     public static final String RESOURCE_PROTOCOL_LOCAL="local";

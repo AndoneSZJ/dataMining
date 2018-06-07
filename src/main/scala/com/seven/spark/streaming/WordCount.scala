@@ -6,8 +6,20 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 //import org.apache.spark.streaming.kafka.KafkaUtils
 
 /**
-  * author seven
-  * time   2018-05-07
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/5/7 上午10:30
   * 接收kafka数据,统计单词数量
   */
 object WordCount {

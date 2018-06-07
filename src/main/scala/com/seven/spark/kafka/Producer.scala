@@ -6,7 +6,21 @@ import java.util.{Properties, Random}
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 
 /**
-  * author seven
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/4/16 上午10:37
+  *
   * 生产者，模拟发数据
   */
 object Producer {

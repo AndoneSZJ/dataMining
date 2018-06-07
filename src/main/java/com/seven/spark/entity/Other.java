@@ -2,6 +2,16 @@ package com.seven.spark.entity;
 
 /**
  * Created by IntelliJ IDEA.
+ *         __   __
+ *         \/---\/
+ *          ). .(
+ *         ( (") )
+ *          )   (
+ *         /     \
+ *        (       )``
+ *       ( \ /-\ / )
+ *        w'W   W'w
+ *
  * author   seven
  * email    sevenstone@yeah.net
  * date     2018/5/29 上午11:07

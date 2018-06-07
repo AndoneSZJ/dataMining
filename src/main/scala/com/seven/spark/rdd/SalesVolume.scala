@@ -10,9 +10,22 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 import org.slf4j.LoggerFactory
 
-/** *
-  * author seven
-  * time   2018-04-20
+/**
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/4/20 下午4:11
+  *
   * 1.排除高价值订单和活动订单
   * 2.取营业天数大于30天，且近20天内销售额大于150元的小区，
   * 3.计算网点内点位的20日销量s

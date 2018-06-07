@@ -12,10 +12,21 @@ import org.slf4j.LoggerFactory
 import scala.collection.mutable
 
 /**
-  * Created by IntelliJ IDEA.  
-  * author   seven  
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
   * email    sevenstone@yeah.net
   * date     2018/5/18 上午11:31
+  *
   * 计算过去一年内渠道月销售金额
   */
 object SalesMonthAverageByZfj {

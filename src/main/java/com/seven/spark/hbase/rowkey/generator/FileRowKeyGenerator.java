@@ -7,9 +7,22 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 文件表RowKey
+ * Created by IntelliJ IDEA.
+ *         __   __
+ *         \/---\/
+ *          ). .(
+ *         ( (") )
+ *          )   (
+ *         /     \
+ *        (       )``
+ *       ( \ /-\ / )
+ *        w'W   W'w
  *
- * @author seven
+ * author   seven
+ * email    sevenstone@yeah.net
+ * date     2018/5/10 下午1:40
+ *
+ * 文件表RowKey
  */
 public class FileRowKeyGenerator implements RowKeyGenerator<String> {
     private static final Logger LOG = LoggerFactory.getLogger(FileRowKeyGenerator.class);

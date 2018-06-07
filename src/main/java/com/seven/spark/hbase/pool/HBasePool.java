@@ -7,9 +7,22 @@ import org.apache.hadoop.hbase.client.Connection;
 import java.util.NoSuchElementException;
 
 /**
- * HBase客户端连接池
+ * Created by IntelliJ IDEA.
+ *         __   __
+ *         \/---\/
+ *          ). .(
+ *         ( (") )
+ *          )   (
+ *         /     \
+ *        (       )``
+ *       ( \ /-\ / )
+ *        w'W   W'w
  *
- * @author seven
+ * author   seven
+ * email    sevenstone@yeah.net
+ * date     2018/5/11 上午10:37
+ *
+ * HBase客户端连接池
  */
 public class HBasePool implements ObjectPool<Connection> {
 

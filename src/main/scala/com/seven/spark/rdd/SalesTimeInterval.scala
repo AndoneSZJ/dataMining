@@ -13,8 +13,21 @@ import org.slf4j.LoggerFactory
 import scala.collection.mutable
 
 /**
-  * author seven
-  * time   2018-04-18
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/4/18 上午9:37
+  *
   * 计算同一账号购买记录时间间隔
   * 活动排除
   */

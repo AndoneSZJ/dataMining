@@ -4,7 +4,20 @@ import com.seven.spark.hbase.rowkey.RowKeyGenerator;
 import org.apache.commons.codec.digest.DigestUtils;
 
 /**
- * @author seven
+ * Created by IntelliJ IDEA.
+ *         __   __
+ *         \/---\/
+ *          ). .(
+ *         ( (") )
+ *          )   (
+ *         /     \
+ *        (       )``
+ *       ( \ /-\ / )
+ *        w'W   W'w
+ *
+ * author   seven
+ * email    sevenstone@yeah.net
+ * date     2018/5/10 下午2:17
  */
 public class MD5RowKeyGenerator implements RowKeyGenerator<String> {
 

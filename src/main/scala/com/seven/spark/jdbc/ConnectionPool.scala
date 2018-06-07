@@ -5,8 +5,22 @@ import java.util
 
 
 /**
-  * author seven
-  * time   2018-05-10
+
+  * Created by IntelliJ IDEA.
+  *         __   __
+  *         \/---\/
+  *          ). .(
+  *         ( (") )
+  *          )   (
+  *         /     \
+  *        (       )``
+  *       ( \ /-\ / )
+  *        w'W   W'w
+  *
+  * author   seven
+  * email    sevenstone@yeah.net
+  * date     2018/5/10 上午9:20
+  *
   * 简易数据库连接池
   * mysql
   */

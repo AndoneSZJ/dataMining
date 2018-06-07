@@ -8,9 +8,22 @@ import org.slf4j.LoggerFactory;
 
 
 /**
- * Hash RowKey生成器
+ * Created by IntelliJ IDEA.
+ *         __   __
+ *         \/---\/
+ *          ). .(
+ *         ( (") )
+ *          )   (
+ *         /     \
+ *        (       )``
+ *       ( \ /-\ / )
+ *        w'W   W'w
  *
- * @author seven
+ * author   seven
+ * email    sevenstone@yeah.net
+ * date     2018/5/10 下午1:50
+ *
+ * Hash RowKey生成器
  */
 public class HashRowKeyGenerator implements RowKeyGenerator<String> {
     private static final Logger LOG = LoggerFactory.getLogger(HashRowKeyGenerator.class);
