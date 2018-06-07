@@ -7,6 +7,7 @@
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/base/GetAllRlbData2018.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/elastic/pool/PooledElasticFactory.java
+/Users/seven/project/github/dataMining/src/main/java/com/seven/spark/hdfs/Utils.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/base/PointBaseInfo.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/common/PropertiesUtils.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/HelloJava.java
@@ -26,7 +27,6 @@
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/elastic/ElasticOperation.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/hbase/pool/PooledHBaseFactory.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/base/Stat.java
-/Users/seven/project/github/dataMining/src/main/java/com/seven/spark/utils/Utils.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/elastic/pool/ElasticPool.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/base/Records.java
 /Users/seven/project/github/dataMining/src/main/java/com/seven/spark/vem/base/NetBaseInfo.java

@@ -1,5 +1,6 @@
 com/seven/spark/vem/data/FP.class
 com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.class
+com/seven/spark/vem/base/OperateStat$16.class
 com/seven/spark/hbase/rowkey/RowKeyGenerator.class
 com/seven/spark/vem/data/ProcessNode2018$4.class
 com/seven/spark/vem/data/GetAllRlbData2018.class
@@ -26,6 +27,7 @@ com/seven/spark/vem/data/AvgProcess$8.class
 com/seven/spark/hbase/HBaseUtils.class
 com/seven/spark/vem/data/AvgProcess$13.class
 com/seven/spark/vem/data/Process$1.class
+com/seven/spark/hdfs/Utils.class
 com/seven/spark/vem/base/OperateStat$6.class
 com/seven/spark/vem/data/ProcessNode2018$1.class
 com/seven/spark/vem/base/BaseOrder$5.class
@@ -42,6 +44,7 @@ com/seven/spark/vem/user/UserInfo$1.class
 com/seven/spark/vem/user/UserInfo.class
 com/seven/spark/vem/data/Process$12.class
 com/seven/spark/vem/data/ProcessNode2018$2.class
+com/seven/spark/vem/base/OperateStat$15.class
 com/seven/spark/vem/data/Process$2.class
 com/seven/spark/vem/data/AvgProcess$14.class
 com/seven/spark/vem/base/BaseOrder.class
@@ -78,7 +81,6 @@ com/seven/spark/vem/data/Process$10.class
 com/seven/spark/vem/data/AvgProcess$1.class
 com/seven/spark/vem/data/AvgProcess$4.class
 com/seven/spark/vem/base/BaseOrder$4.class
-com/seven/spark/utils/Utils.class
 com/seven/spark/vem/user/UserInfo$5.class
 com/seven/spark/vem/data/Process$8.class
 com/seven/spark/vem/base/OperateStat$14.class
