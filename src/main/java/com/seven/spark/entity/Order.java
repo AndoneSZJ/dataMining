@@ -24,7 +24,6 @@ public class Order extends Other {
     private long playTime;//支付时间
     private String netId;//网点id
     private String pointId;//点位id
-    private String rowKey;//HBase行健
 
     public String getUserId() {
         return userId;
@@ -58,15 +57,6 @@ public class Order extends Other {
         this.pointId = pointId;
     }
 
-    public String getRowKey() {
-        return rowKey;
-    }
-
-    public void setRowKey(String rowKey) {
-        this.rowKey = rowKey;
-    }
-
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -75,16 +65,14 @@ public class Order extends Other {
         return playTime == order.playTime &&
                 Objects.equals(userId, order.userId) &&
                 Objects.equals(netId, order.netId) &&
-                Objects.equals(pointId, order.pointId) &&
-                Objects.equals(rowKey, order.rowKey);
+                Objects.equals(pointId, order.pointId);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(userId, playTime, netId, pointId, rowKey);
+        return Objects.hash(userId, playTime, netId, pointId);
     }
-
 
     @Override
     public String toString() {
@@ -93,7 +81,6 @@ public class Order extends Other {
                 ", playTime=" + playTime +
                 ", netId='" + netId + '\'' +
                 ", pointId='" + pointId + '\'' +
-                ", rowKey='" + rowKey + '\'' +
                 '}';
     }
 }

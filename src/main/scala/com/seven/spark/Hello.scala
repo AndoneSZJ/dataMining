@@ -24,5 +24,7 @@ object Hello {
     */
   def main(args: Array[String]): Unit = {
     println("hello")
+    val ss = "adfad()#qag#gsag(faf)"
+    println(ss.replaceAll("[()#]",""))
   }
 }

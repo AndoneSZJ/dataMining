@@ -6,89 +6,710 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/FileType.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/common/CommonConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/common/CommonConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/common/PropertiesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/common/PropertiesUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/common/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/common/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/ElasticPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/ElasticPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/PooledElasticFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/PooledElasticFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataType/dw_dim_zfj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/spark.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/spark.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/HelloJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/HelloJava.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Other.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Other.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/HBasePool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/HBasePool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/PooledHBaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/PooledHBaseFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/RowKeyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/RowKeyGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/MD5RowKeyGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/MD5RowKeyGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/NetBaseInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/NetBaseInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/Stat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/BaseOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/GetAllRlbData2018.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/NetBaseInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateStat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/PointBaseInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/Records.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/Stat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seven/spark/mllib/FP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/GetAllRlbData2018.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/GetHZRlbData2018.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/ProcessNode2018.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/user/UserInfo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/Hello.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/Hello.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/HelloScala.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/HelloScala.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/dw_zfj_rlb" beforeDir="false" afterPath="$PROJECT_DIR$/dataType/dw_zfj_rlb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/jdbc/ConnectionPool.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/jdbc/ConnectionPool.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/KafkaSink.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/KafkaSink.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/MonthlyAverageSalesByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/MonthlyAverageSalesByZfj.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PointNumberOfPeople.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PointNumberOfPeople.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesDefectNetByNetCommunity.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesDefectNetByNetCommunity.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodNet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodNet.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodPoint.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodPoint.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesTimeInterval.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesTimeInterval.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesUserPurchaseOfGoods.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesUserPurchaseOfGoods.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesVolume.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesVolume.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/TestMap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/TestMap.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/dw_zfj_rlb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetTypeUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetTypeUtils.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/SalesLatAndLng.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/SalesLatAndLng.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/StreamingKafka.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/StreamingKafka.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/TopThreeHotProduct.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/TopThreeHotProduct.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCountSocket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCountSocket.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/ReadHdfsFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/ReadHdfsFile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/utils/Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/GetAllRlbData2018.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/GetAllRlbData2018.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/PointBaseInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/PointBaseInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/Records.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/Records.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/Stat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/Stat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FindAbnormal2018.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FindAbnormal2018.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/GetAllRlbData2018.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/GetAllRlbData2018.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/GetHZRlbData2018.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/GetHZRlbData2018.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/ProcessNode2018.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/ProcessNode2018.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/user/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/user/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes.timestamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/Hello$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/HelloJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/HelloScala$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/HelloScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/common/CommonConst.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/common/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/HBaseOps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/HBaseUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/pool/HBasePool$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/pool/HBasePool$HBaseClientPoolHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/pool/HBasePool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/pool/PooledHBaseFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/rowkey/RowKeyGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/hbase/rowkey/generator/MD5RowKeyGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/jdbc/ConnectionPool$$anonfun$initConnectionPool$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/jdbc/ConnectionPool$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/jdbc/ConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/kafka/KafkaSink$$anonfun$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/kafka/KafkaSink$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/kafka/KafkaSink$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/kafka/KafkaSink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/kafka/Producer$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/kafka/Producer$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/kafka/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FileWordCount$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FileWordCount$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FileWordCount$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FileWordCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FileWordCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FlumePullWordCount$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FlumePullWordCount$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FlumePullWordCount$$anonfun$main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FlumePullWordCount$$anonfun$main$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FlumePullWordCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FlumePullWordCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FlumePushWordCount$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FlumePushWordCount$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FlumePushWordCount$$anonfun$main$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FlumePushWordCount$$anonfun$main$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FlumePushWordCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/FlumePushWordCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/ForeachApp$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/ForeachApp$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/ForeachApp$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/ForeachApp$$anonfun$main$1$$anonfun$apply$1$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/ForeachApp$$anonfun$main$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/ForeachApp$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/ForeachApp$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/ForeachApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaDirectWordCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaDirectWordCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaReceiverWordCount$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaReceiverWordCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaReceiverWordCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaStreamApp$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaStreamApp$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/KafkaStreamApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/NetworkWordCount$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/NetworkWordCount$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/NetworkWordCount$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/NetworkWordCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/NetworkWordCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/SqlNetWorkCount$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/SqlNetWorkCount$$anonfun$main$1$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/SqlNetWorkCount$$anonfun$main$1$$typecreator3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/SqlNetWorkCount$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/SqlNetWorkCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/SqlNetWorkCount$Record$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/SqlNetWorkCount$Record.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/SqlNetWorkCount$SparkSessionSingleton$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/SqlNetWorkCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/StatefulWordCount$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/StatefulWordCount$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/StatefulWordCount$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/StatefulWordCount$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/StatefulWordCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/StatefulWordCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/TransformApp$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/TransformApp$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/TransformApp$$anonfun$3$$anonfun$apply$2$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/TransformApp$$anonfun$3$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/TransformApp$$anonfun$3$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/TransformApp$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/TransformApp$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/TransformApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/WindowWordCount$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/WindowWordCount$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/WindowWordCount$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/WindowWordCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/WindowWordCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/dao/CourseClickCountDAO$$anonfun$save$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/dao/CourseClickCountDAO$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/dao/CourseClickCountDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/dao/CourseSearchClickCountDAO$$anonfun$save$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/dao/CourseSearchClickCountDAO$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/dao/CourseSearchClickCountDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/domain/ClickLog$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/domain/ClickLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/domain/CourseClickCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/domain/CourseClickCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/domain/CourseSearchClickCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/domain/CourseSearchClickCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/spark/LtStatStreamingApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/util/DataUtils$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/project/util/DataUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgByZfj$$anonfun$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgByZfj$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgByZfj$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgByZfj$$anonfun$3$$anonfun$apply$2$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgByZfj$$anonfun$3$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgByZfj$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgByZfj$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgByZfj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$13$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$2$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$3$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$4$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$8$$anonfun$apply$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$getAbnormalDataByZfj$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$getAreaNameByZfj$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$$anonfun$getChannelNameByZfj$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/AvgMouthByZfj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$10$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$11$$anonfun$apply$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$15$$anonfun$apply$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$17$$anonfun$apply$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$19$$anonfun$apply$8$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$19$$anonfun$apply$8$$anonfun$apply$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$19$$anonfun$apply$8$$anonfun$apply$9$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$19$$anonfun$apply$8$$anonfun$apply$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$19$$anonfun$apply$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$20$$anonfun$apply$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$21$$anonfun$apply$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$23$$anonfun$apply$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$24.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$25$$anonfun$apply$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$25.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$26.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$5$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$activityUser$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$badNet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$clusteringByCommunity$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$clusteringByDisp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$clusteringByMachineNum$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$clusteringByUser$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$clusteringNettype$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$clusteringOrder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$clusteringPointNum$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$clusteringPointNum$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$goodNetThan250$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$$anonfun$variationNet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Clustering.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$14$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$15$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$17$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5$$anonfun$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4$$anonfun$apply$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$getAbnormalByZfj$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$$anonfun$getChannelByNet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/MonthlyAverageSalesByZfj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$salesByCommunity$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$salesByNettype$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$twoPointMap$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$twoPointMap$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$$anonfun$twoPointMap$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/PointNumberOfPeople.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj$$anonfun$2$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj$$anonfun$3$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj$$anonfun$5$$anonfun$apply$3$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj$$anonfun$5$$anonfun$apply$3$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj$$anonfun$5$$anonfun$apply$3$$anonfun$apply$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj$$anonfun$5$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$2$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$5$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$7$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$getNetByMoneyThan10$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$getNetByMoneyThan300$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$$anonfun$getNetOperateTime$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodNet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$10$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$12$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$14$$anonfun$apply$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$16$$anonfun$apply$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$17$$anonfun$apply$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$19$$anonfun$apply$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$5$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$8$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$getPointByMoneyThan60$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$getPointOperateTime$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$getPointyMoneyThan5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$salesNullPoint$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$$anonfun$salesNullPoint$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesGoodPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$$anonfun$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$$anonfun$3$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$$anonfun$5$$anonfun$apply$3$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$$anonfun$5$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$$anonfun$6$$anonfun$apply$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$$anonfun$getSalesAbnormalByZfj$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesMonthAverageByZfj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNetAvgMount$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNetAvgMount$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNetAvgMount$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNetAvgMount$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNetAvgMount$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNetAvgMount$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNetAvgMount$$anonfun$getOperateTimeByNet$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNetAvgMount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNetAvgMount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInChannelByZfj$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInChannelByZfj$$anonfun$2$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInChannelByZfj$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInChannelByZfj$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInChannelByZfj$$anonfun$4$$anonfun$apply$2$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInChannelByZfj$$anonfun$4$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInChannelByZfj$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInChannelByZfj$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInChannelByZfj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInNetByZfj$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInNetByZfj$$anonfun$2$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInNetByZfj$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInNetByZfj$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInNetByZfj$$anonfun$4$$anonfun$apply$2$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInNetByZfj$$anonfun$4$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInNetByZfj$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInNetByZfj$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesNumInNetByZfj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$10$$anonfun$apply$4$$anonfun$apply$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$10$$anonfun$apply$4$$anonfun$apply$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$10$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$11$$anonfun$apply$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$4$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$6$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$8$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$$anonfun$salesSexByUser$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesSexByOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$3$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$salesCommunity$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$salesMachine$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$salesNettype$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$twoMap$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$$anonfun$twoMap$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesTimeInterval.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$11$$anonfun$apply$12$$anonfun$apply$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$11$$anonfun$apply$12$$anonfun$apply$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$11$$anonfun$apply$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$2$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$4$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$5$$anonfun$apply$4$$anonfun$apply$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$5$$anonfun$apply$4$$anonfun$apply$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$5$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$6$$anonfun$apply$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$8$$anonfun$apply$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$9$$anonfun$apply$9$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$9$$anonfun$apply$9$$anonfun$apply$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$9$$anonfun$apply$9$$anonfun$apply$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$9$$anonfun$apply$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesUserPurchaseOfGoods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$11$$anonfun$apply$3$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$11$$anonfun$apply$3$$anonfun$apply$5$$anonfun$apply$6$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$11$$anonfun$apply$3$$anonfun$apply$5$$anonfun$apply$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$11$$anonfun$apply$3$$anonfun$apply$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$11$$anonfun$apply$3$$anonfun$apply$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$11$$anonfun$apply$3$$anonfun$apply$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$11$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$13$$anonfun$apply$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$7$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$coefficientOfVariation$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$coefficientOfVariation$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$coefficientOfVariation$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$nettypeData$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$normalization$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$normalization$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$salesByMachineNum$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$salesByNettypeName$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$$anonfun$salesPoint$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/SalesVolume.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/TestMap$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/TestMap$$anonfun$flatmapTransformation$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/TestMap$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/TestMap$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/TestMap$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/TestMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$anonfun$salesOperate$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$anonfun$salesOperate$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$anonfun$salesOperate$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$anonfun$setName$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$typecreator1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$typecreator10$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$typecreator2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$typecreator3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$typecreator4$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$typecreator5$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$typecreator6$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$typecreator7$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$typecreator8$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$$typecreator9$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/rdd/Volume.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksession/SparkSessionTest$$anonfun$setListOfNamesBySession$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksession/SparkSessionTest$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksession/SparkSessionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetType$$anonfun$setListOfNames$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetType$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetTypeUtils$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetTypeUtils$$anonfun$2$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetTypeUtils$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetTypeUtils$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetTypeUtils$$anonfun$4$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetTypeUtils$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetTypeUtils$$anonfun$salesNetData$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetTypeUtils$$anonfun$salesPointData$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetTypeUtils$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/NetTypeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/SalesLatAndLng$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/sparksql/SalesLatAndLng.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2$$anonfun$apply$1$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/ReceiveKafkaData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/StreamingKafka$$anonfun$main$1$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/StreamingKafka$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/StreamingKafka$$anonfun$main$2$$anonfun$apply$2$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/StreamingKafka$$anonfun$main$2$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/StreamingKafka$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/StreamingKafka$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/StreamingKafka.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/TopThreeHotProduct$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/TopThreeHotProduct$$anonfun$2$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/TopThreeHotProduct$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/TopThreeHotProduct$$anonfun$3$$anonfun$4$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/TopThreeHotProduct$$anonfun$3$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/TopThreeHotProduct$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/TopThreeHotProduct$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/TopThreeHotProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCount$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$10$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$10$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$11$$anonfun$apply$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$12$$anonfun$13$$anonfun$apply$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$12$$anonfun$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$12$$anonfun$14$$anonfun$apply$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$12$$anonfun$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$16$$anonfun$apply$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$19$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$19$$anonfun$apply$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$readSocketByAllWriteMysql$1$$anonfun$apply$7$$anonfun$apply$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$readSocketByAllWriteMysql$1$$anonfun$apply$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$$anonfun$readSocketByAllWriteMysql$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/streaming/WordCountSocket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/ReadHdfsFile$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/ReadHdfsFile$$anonfun$readFile$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/ReadHdfsFile$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/ReadHdfsFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$$anonfun$getDataByOrder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$$anonfun$simulationSendOutData$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/util/SimulationKafkaSendOutData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/BaseOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/GetAllRlbData2018$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/GetAllRlbData2018$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/GetAllRlbData2018$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/GetAllRlbData2018$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/GetAllRlbData2018.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/NetBaseInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/OperateStat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/PointBaseInfo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/PointBaseInfo$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/PointBaseInfo$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/PointBaseInfo$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/PointBaseInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/Records$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/Records$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/Records.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/Stat$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/Stat$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/Stat$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/base/Stat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/AvgProcess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FindAbnormal2018$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FindAbnormal2018$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FindAbnormal2018$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FindAbnormal2018$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FindAbnormal2018$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FindAbnormal2018$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FindAbnormal2018$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FindAbnormal2018$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FindAbnormal2018$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/FindAbnormal2018.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/GetAllRlbData2018$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/GetAllRlbData2018.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/GetHZRlbData2018$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/GetHZRlbData2018.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/Process.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/ProcessNode2018$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/ProcessNode2018$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/ProcessNode2018$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/ProcessNode2018$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/data/ProcessNode2018.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/user/UserInfo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/user/UserInfo$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/user/UserInfo$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/user/UserInfo$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/user/UserInfo$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/user/UserInfo$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/user/UserInfo$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/seven/spark/vem/user/UserInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hbase-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hdfs-site.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/dataMining-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -120,92 +741,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FindAbnormal2018.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java">
+      <file leaf-file-name="HelloJava.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/HelloJava.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="653">
+              <caret line="103" column="5" selection-start-line="95" selection-start-column="4" selection-end-line="103" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="FP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FP.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/mllib/FP.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetAllRlbData2018.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/GetAllRlbData2018.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseOrder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/BaseOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Volume.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetHZRlbData2018.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/GetHZRlbData2018.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Process.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcessNode2018.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/ProcessNode2018.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PointBaseInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/PointBaseInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetAllRlbData2018.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/GetAllRlbData2018.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -224,8 +773,6 @@
     <findStrings>
       <find>firstEntry()</find>
       <find>sYS</find>
-      <find>print</find>
-      <find>，</find>
       <find>createTime</find>
       <find>vagMoney</find>
       <find>s</find>
@@ -240,13 +787,19 @@
       <find>prepareDelete</find>
       <find>zjshi01@mail.nfsq.com.cn</find>
       <find>Sys</find>
+      <find>dis</find>
+      <find>print</find>
+      <find>大区</find>
+      <find>，</find>
+      <find>/yst/sta_ods/dw_dim_zfj/</find>
+      <find>DW_ZFJ_RLB_ALL</find>
     </findStrings>
     <replaceStrings>
-      <replace>,</replace>
       <replace>avgMoney</replace>
       <replace>/yst/seven/</replace>
       <replace />
       <replace>sevenstone@yeah.net</replace>
+      <replace>,</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -255,19 +808,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/Hello.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/HelloScala.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/util/ReadHdfsFile.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/StreamingKafka.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/TopThreeHotProduct.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCount.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/WordCountSocket.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetTypeUtils.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/SalesLatAndLng.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala" />
@@ -281,7 +821,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesTimeInterval.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesUserPurchaseOfGoods.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesVolume.scala" />
@@ -296,8 +835,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/common/CommonConst.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/common/PropertiesUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/common/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Other.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/HBasePool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/PooledHBaseFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/RowKeyGenerator.java" />
@@ -306,6 +843,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/MD5RowKeyGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateStat.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/Hello.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PoorSalesByPoint.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/GetAllRlbData2018.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesCause.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SeekNetAndPoint.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Operate.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal201805.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Other.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/seven/spark/HelloJava.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala" />
       </list>
     </option>
   </component>
@@ -336,6 +889,11 @@
           <item name="dataMining" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dataMining" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -344,8 +902,8 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1" />
-    <option name="y" value="185" />
+    <option name="x" value="15" />
+    <option name="y" value="301" />
     <option name="width" value="1440" />
     <option name="height" value="805" />
   </component>
@@ -355,6 +913,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -439,31 +998,7 @@
               <item name="dataMining" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="hbase" type="462c0819:PsiDirectoryNode" />
-              <item name="pool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="hbase" type="462c0819:PsiDirectoryNode" />
-              <item name="rowkey" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataMining" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="hbase" type="462c0819:PsiDirectoryNode" />
-              <item name="rowkey" type="462c0819:PsiDirectoryNode" />
-              <item name="generator" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dataMining" type="b2602c69:ProjectViewProjectNode" />
@@ -551,9 +1086,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -562,7 +1096,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -601,14 +1135,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SalesDefectNetByNetCommunity">
-    <configuration name="NetBaseInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.seven.spark.vem.base.NetBaseInfo" />
+  <component name="RunManager" selected="Application.HelloJava">
+    <configuration name="FindAbnormal2018" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.seven.spark.vem.data.FindAbnormal2018" />
       <module name="dataMining" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.seven.spark.vem.base.*" />
+          <option name="PATTERN" value="com.seven.spark.mllib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="HelloJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.seven.spark.HelloJava" />
+      <module name="dataMining" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seven.spark.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -624,8 +1169,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="OperateStat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.seven.spark.vem.base.OperateStat" />
+    <configuration name="OperateInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.seven.spark.vem.base.OperateInfo" />
       <module name="dataMining" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -635,24 +1180,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="SalesDefectNetByNetCommunity" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.seven.spark.rdd.SalesDefectNetByNetCommunity" />
+    <configuration name="SeekNetAndPoint" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.seven.spark.rdd.SeekNetAndPoint" />
       <module name="dataMining" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.seven.spark.rdd.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="SparkSessionTest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.seven.spark.sparksession.SparkSessionTest" />
-      <module name="dataMining" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.seven.spark.sparksession.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -699,19 +1233,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.SparkSessionTest" />
+      <item itemvalue="Application.OperateInfo" />
       <item itemvalue="Application.NetType" />
-      <item itemvalue="Application.OperateStat" />
-      <item itemvalue="Application.NetBaseInfo" />
-      <item itemvalue="Application.SalesDefectNetByNetCommunity" />
+      <item itemvalue="Application.SeekNetAndPoint" />
+      <item itemvalue="Application.HelloJava" />
+      <item itemvalue="Application.FindAbnormal2018" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SalesDefectNetByNetCommunity" />
-        <item itemvalue="Application.OperateStat" />
-        <item itemvalue="Application.NetBaseInfo" />
+        <item itemvalue="Application.HelloJava" />
+        <item itemvalue="Application.SeekNetAndPoint" />
         <item itemvalue="Application.NetType" />
-        <item itemvalue="Application.SparkSessionTest" />
+        <item itemvalue="Application.FindAbnormal2018" />
+        <item itemvalue="Application.OperateInfo" />
       </list>
     </recent_temporary>
   </component>
@@ -754,7 +1288,23 @@
       <workItem from="1528176453554" duration="2585000" />
       <workItem from="1528181537388" duration="1707000" />
       <workItem from="1528246369828" duration="7018000" />
-      <workItem from="1528333012989" duration="4928000" />
+      <workItem from="1528333012989" duration="8743000" />
+      <workItem from="1528426410442" duration="13854000" />
+      <workItem from="1528506520686" duration="17870000" />
+      <workItem from="1528677521973" duration="12456000" />
+      <workItem from="1528765025092" duration="16596000" />
+      <workItem from="1528852635367" duration="5297000" />
+      <workItem from="1528937961670" duration="11506000" />
+      <workItem from="1529024534141" duration="2319000" />
+      <workItem from="1529542072867" duration="2125000" />
+      <workItem from="1529895052400" duration="165000" />
+      <workItem from="1529974697838" duration="2617000" />
+      <workItem from="1530065218519" duration="694000" />
+      <workItem from="1530147464814" duration="1799000" />
+      <workItem from="1530233704356" duration="595000" />
+      <workItem from="1530492559549" duration="900000" />
+      <workItem from="1530579297724" duration="3079000" />
+      <workItem from="1530665844944" duration="4258000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1527214314628</created>
@@ -924,11 +1474,25 @@
       <option name="project" value="LOCAL" />
       <updated>1528338156373</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="批量提交">
+      <created>1528344008405</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1528344008405</updated>
+    </task>
+    <task id="LOCAL-00026" summary="新增需求">
+      <created>1528852777064</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1528852777064</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="444670000" />
+    <option name="totallyTimeSpent" value="544615000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -949,14 +1513,14 @@
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3286119" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.1981402" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.25822604" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4048485" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3078788" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32969698" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22666667" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.13818182" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2832618" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31402004" />
       <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="6" weight="0.3297568" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32768363" />
@@ -965,7 +1529,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2739394" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34424242" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3151515" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1009,6 +1573,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -1031,7 +1605,9 @@
     <MESSAGE value="修改实体类" />
     <MESSAGE value="修改数据源" />
     <MESSAGE value="计算数据缺失率" />
-    <option name="LAST_COMMIT_MESSAGE" value="计算数据缺失率" />
+    <MESSAGE value="批量提交" />
+    <MESSAGE value="新增需求" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增需求" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1074,7 +1650,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala</url>
-          <line>69</line>
+          <line>74</line>
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
@@ -1098,6 +1674,48 @@
           <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PoorSalesByPoint.scala</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PoorSalesByPoint.scala</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PoorSalesByPoint.scala</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Operate.scala</url>
+          <line>153</line>
+          <properties />
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala</url>
+          <line>165</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/PointBaseInfo.java</url>
           <line>113</line>
@@ -1118,27 +1736,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java</url>
-          <line>163</line>
+          <line>189</line>
           <properties />
           <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java</url>
-          <line>158</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java</url>
-          <line>150</line>
-          <properties />
-          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java</url>
@@ -1212,113 +1812,205 @@
           <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateInfo.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="85" />
+      <option name="time" value="104" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>map</expression-string>
+        <expression-string>spark.sql(&quot;select * from vem_nettype where id = '5357'&quot;).show()</expression-string>
+        <language-id>Scala</language-id>
+        <custom-info>org.apache.spark.sql.Dataset</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>spark.sql(&quot;select * from vem_nettype where id = '5357'&quot;)</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>netTypeMap</expression-string>
+        <expression-string>spark.sql(&quot;select * from point_community where id = '3712'&quot;).show()</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>netCommunityMap</expression-string>
+        <expression-string>spark.sql(&quot;select * from point_community where id = '940'&quot;).show()</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>s</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>hashMap.containsKey(&quot;&quot;)</expression-string>
+        <expression-string>spark.sql(&quot;select * from point_community where id = '3705'&quot;).show()</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>hashMap.get(&quot;723&quot;)</expression-string>
+        <expression-string>spark.sql(&quot;select * from point_community where id = '3698'&quot;).show()</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>hashMap</expression-string>
+        <expression-string>point.show()</expression-string>
         <language-id>Scala</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>searchHits.totalHits()</expression-string>
-        <language-id>JAVA</language-id>
+        <expression-string>spark.sql(&quot;select * from point_community where id = '3698'&quot;).show()</expression-string>
+        <language-id>Scala</language-id>
+        <custom-info>org.apache.spark.sql.Dataset</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>searchHits</expression-string>
-        <language-id>JAVA</language-id>
+        <expression-string>spark.sql(&quot;select * from point_community where id = '3705'&quot;).show()</expression-string>
+        <language-id>Scala</language-id>
+        <custom-info>org.apache.spark.sql.Dataset</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetTypeUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="64" column="18" selection-start-line="64" selection-start-column="6" selection-end-line="64" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateStat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/OperateInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17445">
+          <caret line="1177" column="21" selection-start-line="1168" selection-start-column="20" selection-end-line="1177" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/PointBaseInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/SalesLatAndLng.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="555">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/NetBaseInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1665">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7747">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksession/SparkSessionTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="131">
+          <caret line="37" column="40" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgByZfj.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="420">
+          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/AvgMouthByZfj.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="34">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Clustering.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+        <state relative-caret-position="388">
+          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/MonthlyAverageSalesByZfj.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="214">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Operate.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1472">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <element signature="e#29#62#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PointNumberOfPeople.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        <state relative-caret-position="214">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/PoorSalesByPoint.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding>
+            <element signature="e#29#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesCause.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesChannelInAreaSortByZfj.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        <state relative-caret-position="214">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1335,56 +2027,49 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodNet.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesGoodPoint.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="324">
+          <caret line="52" column="21" lean-forward="true" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesMonthAverageByZfj.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        <state relative-caret-position="214">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNetAvgMount.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        <state relative-caret-position="360">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInChannelByZfj.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        <state relative-caret-position="300">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesNumInNetByZfj.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        <state relative-caret-position="165">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesTimeInterval.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1398,188 +2083,104 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesVolume.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SeekNetAndPoint.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1845">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/TestMap.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-781">
+        <state relative-caret-position="270">
           <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="65" column="27" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/Producer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="330">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/kafka/KafkaSink.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/util/SimulationKafkaSendOutData.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="675">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/jdbc/ConnectionPool.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/SalesSexByOrder.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/HelloJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="1695">
+          <caret line="119" column="40" selection-start-line="119" selection-start-column="38" selection-end-line="119" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#29#45#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/ElasticOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8206">
-          <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/ElasticPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/elastic/pool/PooledElasticFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/common/CommonConst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/common/PropertiesUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/common/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Other.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="750">
+          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/HBasePool.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/entity/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="405">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/pool/PooledHBaseFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/sparksql/NetType.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="1905">
+          <caret line="130" column="25" selection-start-line="130" selection-start-column="25" selection-end-line="130" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/RowKeyGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/streaming/ReceiveKafkaData.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+        <state relative-caret-position="1230">
+          <caret line="99" column="45" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/FileRowKeyGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/Records.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        <state relative-caret-position="-55">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/HashRowKeyGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/BaseOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+        <state relative-caret-position="1247">
+          <caret line="149" column="51" selection-start-line="149" selection-start-column="51" selection-end-line="149" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/rowkey/generator/MD5RowKeyGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/GetAllRlbData2018.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hbase/HBaseOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/hdfs/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/GetAllRlbData2018.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="858">
+          <caret line="131" column="88" selection-start-line="131" selection-start-column="60" selection-end-line="131" selection-end-column="88" />
         </state>
       </provider>
     </entry>
@@ -1592,43 +2193,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/Process.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="-2804">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/ProcessNode2018.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="-899">
+          <caret line="32" column="79" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/PointBaseInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/GetAllRlbData2018.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="68" column="83" selection-start-line="68" selection-start-column="69" selection-end-line="68" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataType/dw_zfj_rlb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="65" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/mllib/FP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/GetAllRlbData2018.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal201805.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="3510">
+          <caret line="251" column="38" lean-forward="true" selection-start-line="251" selection-start-column="38" selection-end-line="251" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/base/BaseOrder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/AvgProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="-4562">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/seven/spark/rdd/Volume.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/vem/data/FindAbnormal2018.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="845">
+          <caret line="78" column="84" selection-start-line="78" selection-start-column="70" selection-end-line="78" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/seven/spark/HelloJava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="103" column="5" selection-start-line="95" selection-start-column="4" selection-end-line="103" selection-end-column="5" />
         </state>
       </provider>
     </entry>
