@@ -2,7 +2,7 @@ package com.seven.spark.rdd
 
 import java.util
 
-import com.seven.spark.hdfs.Utils
+import com.seven.spark.hdfs.HdfsOps
 import org.apache.commons.lang.time.StopWatch
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
@@ -218,7 +218,7 @@ object AvgMouthByZfj {
       (channelName + "," + upper + "," + q3 + "," + middle + "," + q1 + "," + lower)
     }).cache()
     val savePath = "/yst/zfj/find/ZFJ_AVG_DATA/"
-    Utils.saveHdfs(data, sc, savePath, 1)
+    HdfsOps.saveHdfs(data, sc, savePath, 1)
     //    data.repartition(1).saveAsTextFile(savePath)
 
   }

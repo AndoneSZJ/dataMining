@@ -125,7 +125,7 @@ object NetType {
 
   }
 
-  /** *
+  /***
     * 写点位信息
     *
     * @param path    点位信息
@@ -133,6 +133,7 @@ object NetType {
     */
   def writePointData(path: String, newPath: String): Unit = {
     val p = spark.read.option("delimiter", ",").csv(path)
+//    p.show(1000)
     val point = spark.createDataFrame(p.rdd, setListOfNames(21))
       .withColumnRenamed("a0", "id") //id
       .withColumnRenamed("a1", "pointName") //名称
@@ -154,6 +155,10 @@ object NetType {
       .filter("isDelete = '0'") //保留正常的信息
     point.cache()
     point.createOrReplaceTempView("point_community")
+//
+//    val aaa= spark.sql("select id,isDelete,pointName from point_community where id = '3705'")
+//    aaa.show()
+//    aaa.rdd.foreach(println)
 
     //id，名称，网点id，创建时间，状态(0,1),类型(点位、网点)，省，市，区  0-8
     //地址，运营商，纬度，经度，点位序号，点位类型，覆盖户数，入住户数  9-16
@@ -163,7 +168,7 @@ object NetType {
       |select
       |v.id,p.pointName,v.parentId,v.createDate,v.isDelete,v.type,v.province,v.city,v.county,
       |v.address,v.operators,v.lat,v.lng,p.sort,p.pointType,p.householdCoverageNum,p.householdOccupancyNum,
-      |p.ctcSignalStrength,p.cmccSignalStrength,p.cuccSignalStrength,p.signalOperator,p.signalSolution
+      |p.ctcSignalStrength,p.cmccSignalStrength,p.cuccSignalStrength,p.signalOperator,p.signalSolution,p.id as pid
       |from point_community p
       |left join vem_nettype v
       |on v.communityId = p.id
@@ -183,7 +188,7 @@ object NetType {
   }
 
 
-  /** *
+  /***
     * 写网点信息
     *
     * @param path    网点信息路径
@@ -233,7 +238,7 @@ object NetType {
       |v.id,n.netName,v.parentId,v.createDate,v.isDelete,v.type,v.province,v.city,v.county,
       |v.address,v.operators,v.lat,v.lng,n.nettypeId,n.propertyManagementId,n.tradingAreaRemark,
       |n.householdCheckInNum,n.buildingNum,n.undergroundParkingNum,n.undergroundCarparkNum,
-      |n.elevatorHallNum,n.houseCompletionTime,n.propertyCosts,n.estatePrice,selfServiceTerminal,n.householdTotalNum
+      |n.elevatorHallNum,n.houseCompletionTime,n.propertyCosts,n.estatePrice,selfServiceTerminal,n.householdTotalNum,n.id as nid
       |from net_community n
       |left join vem_nettype v
       |on v.communityId = n.id

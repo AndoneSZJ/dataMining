@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat
 import java.util
 import java.util.Date
 
-import com.seven.spark.hdfs.Utils
+import com.seven.spark.hdfs.HdfsOps
 import com.seven.spark.sparksql.NetTypeUtils
 import org.apache.commons.lang.time.StopWatch
 import org.apache.spark.broadcast.Broadcast
@@ -375,6 +375,6 @@ object PoorSalesByPoint {
       list.iterator
     }).cache()
 
-    Utils.saveHdfs(point,sc,"/yst/seven/data/poorSalesByPoint/",1)
+    HdfsOps.saveHdfs(point,sc,"/yst/seven/data/poorSalesByPoint/",1)
   }
 }

@@ -4,8 +4,8 @@ import java.text.SimpleDateFormat
 import java.util
 import java.util.Date
 
+import com.seven.spark.hdfs.HdfsOps
 import com.seven.spark.sparksql.NetTypeUtils
-import com.seven.spark.hdfs.Utils
 import org.apache.commons.lang.time.StopWatch
 import org.apache.spark.broadcast.Broadcast
 import org.apache.spark.{SparkConf, SparkContext}
@@ -277,7 +277,7 @@ object SalesNetAvgMount {
         list.iterator
       }).cache()
 //    order.repartition(1).saveAsTextFile("/yst/seven/data/orderData/SalesNetAvgMount/")
-    Utils.saveHdfs(order,sc,"/yst/seven/data/orderData/SalesNetAvgMount/")
+    HdfsOps.saveHdfs(order,sc,"/yst/seven/data/orderData/SalesNetAvgMount/")
   }
 
 
@@ -381,7 +381,7 @@ object SalesNetAvgMount {
         })
         list.iterator
       }).cache()
-    Utils.saveHdfs(order,sc,"/yst/seven/data/orderData/getOrderDataNetByPointThan30/")
+    HdfsOps.saveHdfs(order,sc,"/yst/seven/data/orderData/getOrderDataNetByPointThan30/")
 //    order.repartition(1).saveAsTextFile("/yst/seven/data/orderData/getOrderDataNetByPointThan30/")
   }
 
@@ -461,7 +461,7 @@ object SalesNetAvgMount {
       })
       .cache()
     //    order.repartition(1).saveAsTextFile("/yst/seven/data/orderData/SalesNetAvgMount/")
-    Utils.saveHdfs(netData,sc,"/yst/seven/data/orderData/getOrderNullDataNet/")
+    HdfsOps.saveHdfs(netData,sc,"/yst/seven/data/orderData/getOrderNullDataNet/")
   }
 
 

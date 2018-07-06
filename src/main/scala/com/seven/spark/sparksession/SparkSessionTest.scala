@@ -35,16 +35,21 @@ object SparkSessionTest {
     .getOrCreate() //创建
 
   def main(args: Array[String]): Unit = {
-//    val path = "hdfs://vm-xaj-bigdata-da-d01:8020/yst/vem/sales/order/*"
-//
-//    val ss = spark.read.option("delimiter", ",").csv(path)
-//
-//    val s = spark.createDataFrame(ss.rdd, setListOfNamesBySession(18))
-//
-//    s.createOrReplaceTempView("aaa")
-//
-//    spark.sql("select * from aaa where a8 = 36465").show(100)
-    readOracle()
+    val path = "/yst/sta_vem/vem_machine/*"
+    val ss = spark.read.option("delimiter", ",").csv(path)
+    val s = spark.createDataFrame(ss.rdd, setListOfNamesBySession(30))
+    s.createOrReplaceTempView("sss")
+    //a21-量贩机   a5->正常  a0->id
+    val sss = spark.sql("select distinct a0 from sss where a21 = '2' and a5 = '0'")
+    val machinePath = "/yst/sta_vem/vem_onoff_line_log/*"
+    val a = spark.read.option("delimiter",",").csv(machinePath)
+    val aa = spark.createDataFrame(a.rdd,setListOfNamesBySession(4))
+    aa.createOrReplaceTempView("aaa")
+    //a1->机器id
+    val aaa = spark.sql("select distinct a1 from aaa")
+    println(aaa.count())
+    println(sss.count())
+
   }
 
   /**

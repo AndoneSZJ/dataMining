@@ -1,6 +1,5 @@
 package com.seven.spark.rdd
 
-import com.seven.spark.hdfs.Utils
 import org.apache.commons.lang.time.StopWatch
 import org.apache.spark.api.java.JavaSparkContext
 import org.apache.spark.rdd.RDD
@@ -137,7 +136,6 @@ object SalesChannelInAreaSortByZfj {
 
     //val javaRDD = rdd.toJavaRDD()//将rdd转换为javaRdd
 
-    //Utils.saveHdfs(javaRDD,new JavaSparkContext(conf),savePath)//隐式转换调用Java方法
 
   }
 

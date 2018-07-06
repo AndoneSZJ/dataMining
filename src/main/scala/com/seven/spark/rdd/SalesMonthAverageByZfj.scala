@@ -2,7 +2,7 @@ package com.seven.spark.rdd
 
 import java.util
 
-import com.seven.spark.hdfs.Utils
+import com.seven.spark.hdfs.HdfsOps
 import org.apache.commons.lang.time.StopWatch
 import org.apache.spark.api.java.JavaSparkContext
 import org.apache.spark.broadcast.Broadcast
@@ -163,7 +163,7 @@ object SalesMonthAverageByZfj {
       list.iterator
     }).cache()
     log.info("order data sales is success . . . ")
-    Utils.saveHdfs(data, sc, "/yst/vem/sales/seven/SalesMonthAverageByZfj/", 0)
+    HdfsOps.saveHdfs(data, sc, "/yst/vem/sales/seven/SalesMonthAverageByZfj/", 0)
     //data.repartition(1).saveAsTextFile("/yst/vem/sales/seven/SalesMonthAverageByZfj/")
     log.info("data write hdfs is success . . . ")
   }
