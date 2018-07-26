@@ -5,7 +5,7 @@ import java.util.Objects;
 /**
  * Created by IntelliJ IDEA.
  * author   seven
- * email    zjshi01@mail.nfsq.com.cn
+ * email    sevenstone@yeah.net
  * date     2018/7/26 上午11:14
  */
 public class OrderTest {

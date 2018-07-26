@@ -12,7 +12,7 @@ import java.sql.DriverManager;
 /**
  * Created by IntelliJ IDEA.
  * author   seven
- * email    zjshi01@mail.nfsq.com.cn
+ * email    sevenstone@yeah.net
  * date     2018/7/24 上午11:20
  */
 public class PooledPhoenixFactory extends BasePooledObjectFactory<Connection> {
