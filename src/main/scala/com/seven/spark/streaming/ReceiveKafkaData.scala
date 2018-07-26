@@ -7,6 +7,7 @@ import com.seven.spark.elastic.ElasticOps
 import com.seven.spark.hbase.HBaseOps
 import com.seven.spark.hbase.rowkey.RowKeyGenerator
 import com.seven.spark.hbase.rowkey.generator.HashRowKeyGenerator
+import org.apache.commons.lang.StringUtils
 import org.apache.hadoop.hbase.client.Put
 import org.apache.hadoop.hbase.util.Bytes
 import org.apache.kafka.common.serialization.StringDeserializer
@@ -78,36 +79,39 @@ object ReceiveKafkaData {
       Subscribe[String, String](topics, kafkaParams))
 
     val rowKeyGen: RowKeyGenerator[String] = new HashRowKeyGenerator()
-    val family = "family"
-    val qualifier = "qualifier"
+    val family = "INFO"
     kafkaStream.map(_.value()).foreachRDD(rdd => {
       if (!rdd.isEmpty()) {
         rdd.foreachPartition(x => {
           var puts = List[Put]()
-          var orders = List[Order]()
+          //var orders = List[Order]()
           x.foreach(row => {
-            val format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+            //val format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
 
             val line = row.split(",")
             val rowKey = rowKeyGen.generate("") //获取rowkey
-
-            val order = new Order()
-            order.setId(line(0))
-            order.setNetId(line(9))
-            order.setPointId(line(10))
-            order.setUserId(line(6))
-            order.setPlayTime(format.parse(line(1)).getTime)
-            order.setRowKey(new String(rowKey))
+            // 日期，机器编号，状态，支付方式，支付金额，支付账号，支付时间，支付平台，网点，点位，省市区
+            // 品项编号，商品名称，商品单价，商品数量，自贩机出货量，退款商品数，机器编号，日期
+            val orderId = line(6)
+            val money = line(5).toDouble
+            val account = line(6)
+            val time = line(1)
+            val other = row
 
             val put = new Put(rowKey)
-            put.addColumn(Bytes.toBytes(family), Bytes.toBytes(qualifier), Bytes.toBytes(row)) //插入一条数据
+            //列族,列簇,数值
+            put.addColumn(Bytes.toBytes(family), Bytes.toBytes("ID"), Bytes.toBytes(orderId)) //插入id
+            put.addColumn(Bytes.toBytes(family), Bytes.toBytes("MONEY"), Bytes.toBytes(money)) //插入金额
+            put.addColumn(Bytes.toBytes(family), Bytes.toBytes("TIME"), Bytes.toBytes(time)) //插入时间
+            put.addColumn(Bytes.toBytes(family), Bytes.toBytes("ACCOUNT"), Bytes.toBytes(account)) //插入用户账号
+            put.addColumn(Bytes.toBytes(family), Bytes.toBytes("OTHER"), Bytes.toBytes(other)) //插入其他数据
             puts.::=(put)
-            orders.::=(order)
+            //orders.::=(order)
           })
-          HBaseOps.puts("seven", puts) //HBase工具类，批量插入数据
+          HBaseOps.puts("ORDERTEST", puts) //HBase工具类，批量插入数据
           log.info(s"Inserting ${puts.size} lines of data to HBase is success . . .")
-          ElasticOps.puts("seven", "order", orders) //ES工具类，批量插入数据
-          log.info(s"Inserting ${orders.size} lines of data to ElasticSearch is success . . .")
+          //ElasticOps.puts("seven", "order", orders) //ES工具类，批量插入数据
+          //log.info(s"Inserting ${orders.size} lines of data to ElasticSearch is success . . .")
         })
       }
     })

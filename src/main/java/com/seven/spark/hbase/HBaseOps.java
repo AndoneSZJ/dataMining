@@ -631,16 +631,21 @@ public class HBaseOps {
 
     public static void main(String[] args) {
         try {
-//            createTable("seven",new String[]{"family","qualifier"});
-//            deleteTable("orderDataTest");
-            List<String> stringList = new ArrayList<String>();
-            stringList.add("aaa5406793327251");
-            stringList.add("aaa1396793327251");
-            stringList.add("aaa3495793327251");
-            List<byte []> list = getRows("seven",stringList,"family","qualifier");
-            for(byte[] b : list){
-                System.out.println(new String(b));
-            }
+            //createTable("seven",new String[]{"family","qualifier"});
+//            deleteTable("seven");
+//            List<String> stringList = new ArrayList<String>();
+//            stringList.add("001");
+//            stringList.add("002");
+//            stringList.add("003");
+//            List<byte []> list = //getRows("seven",stringList,"family","qualifier");
+//                    getRows("SEVEN",stringList,"INFO","AGE");
+//            for(byte[] b : list){
+//                System.out.println(new String(b));
+//            }
+
+            String[] strings = {"INFO","ID","TIME","MONEY","ACCOUNT","OTHER"};
+            String tableName = "ORDERTEST";
+            createTable(tableName,strings);
         } catch (Exception e) {
             e.printStackTrace();
         }

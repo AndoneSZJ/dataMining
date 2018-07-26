@@ -1,6 +1,5 @@
 package com.seven.spark.elastic;
 
-import com.amazonaws.util.json.JSONObject;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.seven.spark.entity.Other;
 import com.seven.spark.elastic.pool.ElasticPool;
@@ -33,6 +32,7 @@ import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.sort.SortOrder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import scala.util.parsing.json.JSONObject;
 
 import java.util.List;
 import java.util.Map;

@@ -43,7 +43,8 @@ public class PooledElasticFactory extends BasePooledObjectFactory<TransportClien
         port = conf.getInt("es.tcp.port");
         String clusterName = conf.getString("es.cluster.name");
         boolean enableSniff = conf.getBoolean("es.client.transport.sniff");
-        LOG.debug("host: {}, port: {}, cluster name: {}, enable sniff: {}", hosts, port, clusterName, enableSniff);
+        LOG.debug("host: {}, port: {}", hosts, port);
+        LOG.debug("cluster name: {}, enable sniff: {}", clusterName, enableSniff);
 
         settings = Settings.builder()
                 //去除jar冲突
